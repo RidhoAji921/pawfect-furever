@@ -13,19 +13,29 @@
 </head>
 <body class="flex flex-col justify-center items-center overflow-x-hidden gap-[60px] bg-backgroundColor">
     <nav class="flex w-full justify-between items-center px-[60px]">
+      <a href="#Home">
         <img src="{{ asset('images/Logo.png') }}">
-        <ul class="flex text-black font-Header font-medium gap-10">
-            <li class="text-textParagraph font-Quicksand text-Header4 font-medium">Home</li>
-            <li class="text-textParagraph font-Quicksand text-Header4 font-medium">About</li>
-            <li class="text-textParagraph font-Quicksand text-Header4 font-medium">Services</li>
-            <li class="text-textParagraph font-Quicksand text-Header4 font-medium">Testimoni</li>
-        </ul>
-        <button class="flex text-white font-Quicksand text-Header4 font-medium gap-2 px-3 py-2 bg-Orange/10 rounded-[12px] items-center">Cek Reservasi
+      </a>
+      <ul class="flex text-black font-Header font-medium gap-10">
+        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+          <a href="welcome#home">Home</a>
+        </li>
+        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+          <a href="welcome#about">About</a>
+        </li>
+        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+          <a href="welcome#service">Services</a>
+        </li>
+        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+          <a href="welcome#testimoni">Testimoni</a>
+        </li>
+      </ul>
+      <a href="cek reservasi" class="flex text-white font-Quicksand text-Header4 font-medium gap-2 px-3 py-2 bg-Orange/10 rounded-[12px] items-center">Cek Reservasi
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="white"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
-        </button>
+      </a>
     </nav>
     <div id="content" class="flex flex-col gap-10 justify-center items-center pb-10">
-        <section id="Layanan-kami" class="flex w-full gap-10 px-[120px] justify-start items-center">
+        <section id="Hero" class="flex w-full gap-10 px-[120px] justify-start items-center">
             <div class="flex flex-col gap-10 justify-center items-center w-full">
                 <div class="flex flex-col gap-5 justify-center items-center">
                     <p class="text-textTittle font-Quicksand text-Header3 font-bold text-center">Selamat datang di Pawfect Furever</p>
@@ -44,110 +54,161 @@
             </div>
         </section>
 
-        <section id=>
-
+        <section id="Layanan-kami" class="flex flex-col gap-10 px-[120px] justify-center items-center w-full">
+          <h1 class="text-textTittle font-Quicksand text-Header2 font-bold w-fit text-center">Kami menyediakan berbagai layanan untuk memastikan kenyamanan dan kebahagiaan hewan kesayangan Anda.</h1>
+          <div class="flex flex-col gap-5">
+            <div class="flex gap-5 justify-center items-center h-fit">
+              <div class="flex flex-col gap-5 px-5 py-3">
+                <div class="flex gap-5 justify-center items-center">
+                  <img src="{{ asset('images/Logo Pet grooming.png') }}">
+                  <p class="text-textTittle font-Quicksand text-Header4 font-semibold">Pet Grooming</p>
+                </div>
+                <p class="text-textParagraph font-raleway text-Large font-medium">Lama waktu yang dibutuhkan untuk pet grooming di Pawfect Furever bervariasi tergantung pada ukuran, jenis bulu, dan kondisi hewan peliharaan Anda. Secara umum, layanan grooming lengkap biasanya memakan waktu antara 60 hingga 120 menit</p>
+                <ul class="list-decimal text-textParagraph font-raleway text-Large font-medium">Tim profesional kami menawarkan layanan grooming lengkap yang mencakup :
+                  <li class="text-textParagraph font-raleway text-Large font-medium">pembersih telinga</li>
+                  <li class="text-textParagraph font-raleway text-Large font-medium">pemotongan kuku</li>
+                  <li class="text-textParagraph font-raleway text-Large font-medium">mandi</li>
+                  <li class="text-textParagraph font-raleway text-Large font-medium">trim bulu</li>
+                </ul>
+                <p class="text-textParagraph font-raleway text-Large font-medium">sesuai dengan kebutuhan hewan peliharaan Anda. Kami selalu memastikan hewan peliharaan Anda merasa nyaman dan tidak tergesa-gesa selama proses grooming.</p>
+              </div>
+              <img src="{{ asset('images/cat grooming1.png') }}" class="shadow-[16px_20px_6px_12px_rgba(197,112,93,0.25)] rounded-t-[200px] w-[467px] h-[449px]">
+            </div>
+            <div class="flex gap-10">
+              <div class="flex flex-col gap-5">
+                <div class="flex gap-5 justify-center items-center">
+                  <img src="{{ asset('images/Logo Pet Hotel.png') }}">
+                  <p class="text-textTittle font-Quicksand text-Header4 font-semibold">Pet hotel</p>
+                </div>
+                <p class="text-textParagraph font-raleway text-Large font-medium">Ketika Anda pergi berlibur, Anda bisa tenang karena hewan peliharaan Anda akan menginap di fasilitas pet hotel kami yang nyaman dan aman. Kami menyediakan ruang tidur yang bersih dan terawat, serta memberi perhatian dan kasih sayang yang mereka butuhkan selama Anda pergi.</p>
+              </div>
+              <img src="{{ asset('images/cat grooming2.png') }}" class="w-[467px] h-[552px] rounded-full shadow-[16px_20px_6px_12px_rgba(197,112,93,0.25)]">
+              <div class="flex flex-col justify-end items-center gap-5">
+                <div class="flex gap-5 justify-center items-center">
+                  <img src="{{ asset('images/Logo Pet Walking.png') }}">
+                  <p class="text-textTittle font-Quicksand text-Header4 font-semibold">Pet Walking & Sitting</p>
+                </div>
+                <p class="text-textParagraph font-raleway text-Large font-medium">Ketika Anda pergi berlibur, Anda bisa tenang karena hewan peliharaan Anda akan menginap di fasilitas pet hotel kami yang nyaman dan aman. Kami menyediakan ruang tidur yang bersih dan terawat, serta memberi perhatian dan kasih sayang yang mereka butuhkan selama Anda pergi.</p>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <section id="Testimoni" class="flex flex-col w-full gap-10 px-[120px]">
-      <h1 class="text-textTittle font-Quicksand text-Header1 font-bold w-fit">Testimoni</h1>
-        <div class="flex flex-col justify-center items-center">
-          <div class="flex gap-10 px-10 py-10 bg-Green/70 rounded-[40px] justify-center items-center w-[1100px]">
-            <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px]">
-            <div class="flex flex-col gap-10 py-10">
-              <div class="flex gap-[120px] h-fit w-fit">
-                <div class="flex flex-col gap-1 w-fit h-fit">
-                  <p class="text-textTittle font-raleway text-Header2 font-bold">Wildan</p>
-                  <p class="text-textTittle font-raleway text-Large font-medium">22/09/2024</p>
-                </div>
-                  <div class="flex flex-col gap-1 w-fit h-fit">
-                  <p class="text-textTittle font-raleway text-Header3 font-bold w-fit">5.0</p>
-                  <div class="flex gap-1">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                  </div>
+        <section id="Keuntungan" class="flex gap-10 px-[120px] justify-center items-center">
+          <img src="{{ asset('images/cat grooming1.png') }}" class="w-[477px] h-[488px] rounded-b-full shadow-[16px_20px_6px_12px_rgba(197,112,93,0.25)]">  
+          <div class="flex flex-col gap-10">
+            <p class="text-textTittle font-Quicksand text-Header2 font-semibold">Keuntungan memilih pawfect furever :</p>
+            <ul class="list-decimal px-5">
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">Profesionalisme: Tim kami terdiri dari para profesional yang berpengalaman dan terlatih dalam menangani berbagai jenis hewan peliharaan.</li>
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">Kenyamanan dan Keamanan: Fasilitas kami dirancang untuk memberikan lingkungan yang aman dan nyaman bagi hewan peliharaan Anda.</li>
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">Perawatan yang Dipersonalisasi: Setiap hewan peliharaan mendapatkan perhatian dan perawatan yang sesuai dengan kebutuhan spesifik mereka.</li>
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">Produk Berkualitas: Kami hanya menggunakan produk-produk perawatan yang terbaik dan aman bagi hewan peliharaan Anda.</li>
+            </ul>
+          </div>
+        </section>
+
+      <section id="testimoni" class="flex flex-col px-[120px] gap-10">
+      <h1 class="text-textTittle font-Quicksand text-Header1 font-bold">Testimoni</h1>
+      <div class="flex flex-col justify-center items-center">
+        <div class="flex gap-10 p-10 bg-Green/70 rounded-[40px] justify-center items-center">
+          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px]">
+          <div class="flex flex-col gap-10 py-10">
+            <div class="flex gap-[120px]">
+              <div class="flex flex-col gap-3">
+                <p class="text-textTittle font-raleway text-Header2 font-bold">Wildan</p>
+                <p class="text-textTittle font-raleway text-Large font-medium">27/09/2024</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="text-textTittle font-raleway text-Header3 font-bold">5.0</p>
+                <div class="flex gap-1">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
                 </div>
               </div>
+            </div>
               <p class="text-textParagraph font-raleway text-Large font-medium">Tiga bulan lalu saya membawa Kucing saya ke Pawfect Furever untuk pertama kalinya, dan sekarang saya tidak bisa membayangkan pergi ke tempat lain! Tim mereka sangat profesional, ramah, dan penuh perhatian. Layanan grooming yang mereka tawarkan sangat detail dan hasilnya selalu memuaskan!</p>
-            </div>
-            <div class="flex flex-col h-fit justify-center items-center gap-5">
-              <div class="rounded-full w-[30px] h-[30px] border border-white"></div>
-              <div class="rounded-full w-[30px] h-[30px] border border-white"></div>
-              <div class="rounded-full w-[30px] h-[80px] border border-white bg-backgroundColor"></div>
-            </div>
           </div>
-          <div class="flex gap-10 px-10 py-10 bg-Green/40 rounded-[40px] justify-center items-center -mt-[460px] w-[1138px]">
-            <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px]">
-            <div class="flex flex-col gap-10 py-10">
-              <div class="flex gap-[120px] h-fit w-fit">
-                <div class="flex flex-col gap-1 w-fit h-fit">
-                  <p class="text-textTittle font-raleway text-Header2 font-bold">Wildan</p>
-                  <p class="text-textTittle font-raleway text-Large font-medium">22/09/2024</p>
-                </div>
-                  <div class="flex flex-col gap-1 w-fit h-fit">
-                  <p class="text-textTittle font-raleway text-Header3 font-bold w-fit">5.0</p>
-                  <div class="flex gap-1">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                  </div>
+          <div class="flex flex-col gap-5 h-fit">
+            <div class="w-[30px] h-[30px] border border-white rounded-full"> </div>
+            <div class="w-[30px] h-[30px] border border-white rounded-full"> </div>
+            <div class="w-[30px] h-[80px] bg-backgroundColor border border-white rounded-full"> </div>
+          </div>
+        </div>
+
+        <div class="flex gap-10 p-10 bg-Green/40 rounded-[40px] justify-center items-center -mt-[420px]">
+          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px]">
+          <div class="flex flex-col gap-10 py-10">
+            <div class="flex gap-[120px]">
+              <div class="flex flex-col gap-3">
+                <p class="text-textTittle font-raleway text-Header2 font-bold">Wildan</p>
+                <p class="text-textTittle font-raleway text-Large font-medium">27/09/2024</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="text-textTittle font-raleway text-Header3 font-bold">5.0</p>
+                <div class="flex gap-1">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
                 </div>
               </div>
+            </div>
               <p class="text-textParagraph font-raleway text-Large font-medium">Tiga bulan lalu saya membawa Kucing saya ke Pawfect Furever untuk pertama kalinya, dan sekarang saya tidak bisa membayangkan pergi ke tempat lain! Tim mereka sangat profesional, ramah, dan penuh perhatian. Layanan grooming yang mereka tawarkan sangat detail dan hasilnya selalu memuaskan!</p>
-            </div>
-            <div class="flex flex-col h-fit justify-center items-center gap-5">
-              <div class="rounded-full w-[30px] h-[30px] border border-white"></div>
-              <div class="rounded-full w-[30px] h-[30px] border border-white"></div>
-              <div class="rounded-full w-[30px] h-[80px] border border-white bg-backgroundColor"></div>
-            </div>
           </div>
-          <div class="flex gap-10 px-10 py-10 bg-Green/10 rounded-[40px] justify-center items-center -mt-[430px] w-[1200px]">
-            <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px]">
-            <div class="flex flex-col gap-10 py-10">
-              <div class="flex gap-[120px] h-fit w-fit">
-                <div class="flex flex-col gap-1 w-fit h-fit">
-                  <p class="text-textTittle font-raleway text-Header2 font-bold">Wildan</p>
-                  <p class="text-textTittle opacity-70 font-raleway text-Large font-medium">22/09/2024</p>
-                </div>
-                  <div class="flex flex-col gap-1 w-fit h-fit">
-                  <p class="text-textTittle font-raleway text-Header3 font-bold w-fit">5.0</p>
-                  <div class="flex gap-1">
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                    <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
-                  </div>
+          <div class="flex flex-col gap-5 h-fit">
+            <div class="w-[30px] h-[30px] border border-white rounded-full"> </div>
+            <div class="w-[30px] h-[30px] border border-white rounded-full"> </div>
+            <div class="w-[30px] h-[80px] bg-backgroundColor border border-white rounded-full"> </div>
+          </div>
+        </div>
+
+        <div class="flex gap-10 p-10 bg-Green/10 rounded-[40px] justify-center items-center -mt-[420px]">
+          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px]">
+          <div class="flex flex-col gap-10 py-10">
+            <div class="flex gap-[120px]">
+              <div class="flex flex-col gap-3">
+                <p class="text-textTittle font-raleway text-Header2 font-bold">Wildan</p>
+                <p class="text-textTittle opacity-70 font-raleway text-Large font-medium">27/09/2024</p>
+              </div>
+              <div class="flex flex-col gap-3">
+                <p class="text-textTittle font-raleway text-Header3 font-bold">5.0</p>
+                <div class="flex gap-1">
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
+                  <svg  xmlns="http://www.w3.org/2000/svg"  width="30"  height="30"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-star"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" /></svg>
                 </div>
               </div>
+            </div>
               <p class="text-textParagraph font-raleway text-Large font-medium">Tiga bulan lalu saya membawa Kucing saya ke Pawfect Furever untuk pertama kalinya, dan sekarang saya tidak bisa membayangkan pergi ke tempat lain! Tim mereka sangat profesional, ramah, dan penuh perhatian. Layanan grooming yang mereka tawarkan sangat detail dan hasilnya selalu memuaskan!</p>
-            </div>
-            <div class="flex flex-col h-fit justify-center items-center gap-5">
-              <div class="rounded-full w-[30px] h-[30px] border border-white"></div>
-              <div class="rounded-full w-[30px] h-[30px] border border-white"></div>
-              <div class="rounded-full w-[30px] h-[80px] border border-white bg-backgroundColor"></div>
-            </div>
           </div>
+          <div class="flex flex-col gap-5 h-fit">
+            <div class="w-[30px] h-[30px] border border-white rounded-full"> </div>
+            <div class="w-[30px] h-[30px] border border-white rounded-full"> </div>
+            <div class="w-[30px] h-[80px] bg-backgroundColor border border-white rounded-full"> </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="Cta" class="flex flex-col justify-start px-[120px] w-full">
-        <div class="flex bg-Orange/70 px-10 py-[60px] w-[1118px] justify-end rounded-[40px]">
-            <div class="flex flex-col gap-5 w-fit justify-center items-center">
-                <p class="text-white font-Quicksand text-Header2 font-Bold text-center">Yuk, Buat Peliharaan Anda Tampil<br>Menawan!</p>
-                <button class="flex bg-white gap-2 py-4 px-10 rounded-[16px] text-Orange/70 font-bold text-Header4 font-Quicksand w-fit justify-center items-center">Reservasi Sekarang
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#C5705D"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
-                </button>
-            </div>
+    <section id="Cta" class="flex flex-col px-[120px] w-full">
+      <div class="flex bg-Orange/70 px-10 py-[60px] justify-end items-end rounded-[40px] w-full">
+        <div class="flex flex-col gap-5 justify-center items-center">
+          <p class="text-white font-Quicksand text-Header2 font-bold text-center">Yuk, Buat Peliharaan Anda Tampil<br>Menawan!</p>
+          <button class="flex bg-white gap-2 px-10 py-4 w-fit rounded-[16px] justify-center items-center text-Orange/70 font-Quicksand text-Header4 font-bold">Reservasi Sekarang
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="#C5705D"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
+          </button>
         </div>
-        <img src="{{ asset('images/gray cat.png') }}" class="w-[456px] h-[469px] -mt-[290px]">
+      </div>
+      <img src="{{ asset('images/gray cat.png') }}" class="w-[456px] h-[469px] -mt-[290px]">
     </section>
   </div>
-    <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 rounded-t-[40px]">
+  <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 rounded-t-[40px]">
         <div class="flex gap-[80px] w-[1183px]">
             <div class="flex flex-col gap-5 w-full">
                 <div class="flex flex-col gap-4">
@@ -172,15 +233,25 @@
                 </div>
             </div>
             <ul class="flex flex-col text-black font-Quicksand text-Header4 font-semibold gap-3 justify-center items-center w-full">pages
-                <li class="text-black font-Quicksand text-Header4 font-medium">Home</li>
-                <li class="text-black font-Quicksand text-Header4 font-medium">About</li>
-                <li class="text-black font-Quicksand text-Header4 font-medium">Service</li>
-                <li class="text-black font-Quicksand text-Header4 font-medium">Testimoni</li>
-                <li class="text-black font-Quicksand text-Header4 font-medium">Cek Reservasi</li>
+                <li class="text-black font-Quicksand text-Header4 font-medium">
+                  <a href="welcome#home">Home</a>
+                </li>
+                <li class="text-black font-Quicksand text-Header4 font-medium">
+                  <a href="welcome#about">About</a>
+                </li>
+                <li class="text-black font-Quicksand text-Header4 font-medium">
+                  <a href="welcome#service">Service</a>
+                </li>
+                <li class="text-black font-Quicksand text-Header4 font-medium">
+                  <a href="welcome#testimoni">Testimoni</a>
+                </li>
+                <li class="text-black font-Quicksand text-Header4 font-medium">
+                  <a href="cek reservasi">Cek Reservasi</a>
+                </li>
             </ul>
         </div>
         <div class="flex h-[2px] w-[1238px] bg-black opacity-50"> </div>
         <p class="text-black opacity-70 font-Quicksand text-Large font-medium">pawfect furever © 2024 All Right Reserved</p>
-    </footer>
+  </footer>
 </body>
 </html>
