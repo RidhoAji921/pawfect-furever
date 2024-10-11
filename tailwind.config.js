@@ -22,8 +22,7 @@ export default {
         'statusGrooming' : '#FFE500',
         'statusSelesai' : '#61FF00',
         'statusOntheway' : '#FF7A00',
-        'white' : '#ffffff',
-        'black' : '#000000',
+        'line' : '#D0B8A8',
       },
 
       fontSize: {
