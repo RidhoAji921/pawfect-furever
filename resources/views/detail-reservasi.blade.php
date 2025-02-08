@@ -56,7 +56,7 @@
                                 <p class="text-statusGrooming font-Quicksand text-Base font-medium">• Grooming</p>
                             </div>
                         </div>
-                        <div class="flex justify-between justify-center items-center">
+                        <div class="flex justify-between items-center">
                             <div class="flex flex-col gap-3 w-[80px]">
                                 <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
                                 <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
@@ -99,7 +99,7 @@
                                 <p class="text-statusSelesai font-Quicksand text-Base font-medium">• Selesai</p>
                             </div>
                         </div>
-                        <div class="flex justify-between justify-center items-center">
+                        <div class="flex justify-between items-center">
                             <div class="flex flex-col gap-3 w-[80px]">
                                 <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
                                 <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
@@ -144,7 +144,7 @@
                                 <p class="text-statusOntheway font-Quicksand text-Base font-medium">• Driver Menuju Lokasi Anda!</p>
                             </div>
                         </div>
-                        <div class="flex justify-between justify-center items-center">
+                        <div class="flex justify-between items-center">
                             <div class="flex flex-col gap-3 w-[80px]">
                                 <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
                                 <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
@@ -187,7 +187,7 @@
                                 <p class="text-statusGrooming font-Quicksand text-Base font-medium">• Grooming</p>
                             </div>
                         </div>
-                        <div class="flex justify-between justify-center items-center">
+                        <div class="flex justify-between items-center">
                             <div class="flex flex-col gap-3 w-[80px]">
                                 <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
                                 <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
