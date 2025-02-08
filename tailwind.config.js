@@ -9,7 +9,7 @@ export default {
     extend: {
 
       colors: {
-        'textTittle' : '#570F29',
+        'textTitle' : '#570F29',
         'textParagraph' : '#7C1A3E',
         'backgroundColor' : '#F8EDE3',
         'footerColor' : '#EBE3D5',
@@ -26,7 +26,7 @@ export default {
       },
 
       fontSize: {
-        'heroTittle/Bold' : ['100px', '1'],
+        'heroTitle/Bold' : ['100px', '1'],
         'Header1' : ['70px', '1'],
         'Header2' : ['40px', '1'],
         'Header3' : ['30px', '36px'],
