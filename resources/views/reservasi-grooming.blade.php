@@ -77,7 +77,7 @@
                     </div>
                     <div class="flex gap-10 w-full">
                         <div class="flex flex-col gap-3 w-full">
-                            <p class="text-textTitle font-Quicksand text-Header4 font-semibold">Alamatt :</p>
+                            <p class="text-textTitle font-Quicksand text-Header4 font-semibold">Alamat :</p>
                             <input type="text" placeholder="Masukan Alamat Anda ..." value="{{ Auth::user()->address??"" }}" class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]"></input>
                         </div>
                         <div class="flex flex-col gap-3 w-full">
