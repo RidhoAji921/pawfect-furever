@@ -58,7 +58,7 @@
           <img src="{{ asset('images/sc_pg2.png') }}">
           <div class="flex flex-col gap-5 items-end">
             <h1 class="w-full text-textTitle font-Quicksand text-Header3 font-bold">Kenyamanan dan kebahagiaan hewan kesayangan Anda adalah prioritas kami dengan layanan terbaik.</h1>
-            <p class="text-textParagraph font-raleway text-Header4 font-bold">Kami hadir dengan layanan profesional untuk memastikan hewan kesayangan Anda mendapatkan perawatan terbaik, penuh kasih, dan nyaman setiap saat.</p>
+            <p class="text-textParagraph font-raleway text-Header4 font-medium">Kami hadir dengan layanan profesional untuk memastikan hewan kesayangan Anda mendapatkan perawatan terbaik, penuh kasih, dan nyaman setiap saat.</p>
             <div class="w-[450px] bg-textTitle h-[4px] rounded-full"> </div>
           </div>
         </section>
