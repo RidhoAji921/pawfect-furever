@@ -54,56 +54,49 @@
             </div>
         </section>
 
-        <section id="Layanan-kami" class="flex flex-col gap-10 px-[120px] justify-center items-center w-full">
-          <h1 class="text-textTitle font-Quicksand text-Header2 font-bold w-fit text-center">Kami menyediakan berbagai layanan untuk memastikan kenyamanan dan kebahagiaan hewan kesayangan Anda.</h1>
-          <div class="flex flex-col gap-10">
-            <div class="flex gap-5 justify-center items-center h-fit">
-              <div class="flex flex-col gap-5 px-5 py-3">
-                <div class="flex gap-5 justify-center items-center">
-                  <img src="{{ asset('images/Logo Pet grooming.png') }}">
-                  <p class="text-textTitle font-Quicksand text-Header4 font-bold">Pet Grooming</p>
+        <section id="explanation" class="flex gap-10 justify-center items-center px-32">
+          <img src="{{ asset('images/sc_pg2.png') }}">
+          <div class="flex flex-col gap-5 items-end">
+            <h1 class="w-full text-textTitle font-Quicksand text-Header3 font-bold">Kenyamanan dan kebahagiaan hewan kesayangan Anda adalah prioritas kami dengan layanan terbaik.</h1>
+            <p class="text-textParagraph font-raleway text-Header4 font-medium">Kami hadir dengan layanan profesional untuk memastikan hewan kesayangan Anda mendapatkan perawatan terbaik, penuh kasih, dan nyaman setiap saat.</p>
+            <div class="w-[450px] bg-textTitle h-[4px] rounded-full"> </div>
+          </div>
+        </section>
+
+        <section id="about-service" class="flex flex-col justify-center items-center px-32">
+          <div class="w-full flex flex-col gap-5 px-10 py-5 bg-Orange/20 rounded-[40px]">
+            <h1 class="text-textTitle font-Quicksand text-Header2 font-bold">Kami menyediakan berbagai layanan untuk<br>memastikan kenyamanan dan kebahagiaan<br>hewan kesayangan Anda.</h1>
+            <div class="flex gap-10 justify-start items-start">
+              <img src="{{ asset('images/sc_pg3.png')}}">
+              <div class="bg-textTitle w-[20px] h-[525px] rounded-full rotate"> </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3">
+                  <h1 class="text-textTitle font-Quicksand text-Header4 font-bold">Pet Grooming -</h1>
+                  <p class="text-textParagraph font-Quicksand text-Header4 font-semibold">Layanan grooming kami mencakup pembersihan telinga, pemotongan kuku, mandi, dan trim bulu, disesuaikan dengan kebutuhan hewan kesayangan Anda. Prosesnya berlangsung 60-120 menit, dengan kenyamanan sebagai prioritas utama.</p>
                 </div>
-                <p class="text-textParagraph font-raleway text-Large font-semibold">Pet grooming di Pawfect Furever biasanya memakan waktu 60-120 menit, tergantung ukuran, jenis bulu, dan kondisi hewan peliharaan.</p>
-                <p class="list-decimal text-textParagraph font-raleway text-Large font-semibold">Tim profesional kami menawarkan layanan grooming lengkap yang mencakup : <br><br>
-                 1. Pembersih Telinga<br>
-                 2. Pemotongan Kuku<br>
-                 3. Mandi<br>
-                 4. Trim Bulu<br>
-                </p>
-                <p class="text-textParagraph font-raleway text-Large font-semibold">Kami memastikan proses grooming sesuai kebutuhan hewan peliharaan Anda, dengan kenyamanan tanpa tergesa-gesa.</p>
-              </div>
-              <img src="{{ asset('images/cat grooming1.png') }}" class="shadow-[16px_20px_6px_12px_rgba(197,112,93,0.25)] rounded-t-[200px] w-[467px] h-[449px]">
-            </div>
-            <div class="flex gap-10">
-              <div class="flex flex-col gap-5">
-                <div class="flex gap-5 justify-center items-center">
-                  <img src="{{ asset('images/Logo Pet Hotel.png') }}">
-                  <p class="text-textTitle font-Quicksand text-Header4 font-bold">Pet hotel</p>
+                <div class="flex flex-col gap-3">
+                  <h1 class="text-textTitle font-Quicksand text-Header4 font-bold">Pet Hotel -</h1>
+                  <p class="text-textParagraph font-Quicksand text-Header4 font-semibold">Nikmati liburan tanpa khawatir! Pet hotel kami menyediakan ruang tidur bersih, perawatan penuh kasih, dan lingkungan yang aman untuk hewan kesayangan Anda.</p>
                 </div>
-                <p class="text-textParagraph font-raleway text-Large font-semibold">Saat Anda berlibur, hewan peliharaan Anda akan nyaman dan aman di pet hotel kami, dengan ruang tidur bersih serta perhatian penuh kasih.</p>
-              </div>
-              <img src="{{ asset('images/cat grooming2.png') }}" class="w-[467px] h-[552px] rounded-full shadow-[16px_20px_6px_12px_rgba(197,112,93,0.25)]">
-              <div class="flex flex-col justify-end items-center gap-5">
-                <div class="flex gap-5 justify-center items-center">
-                  <img src="{{ asset('images/Logo Pet Walking.png') }}">
-                  <p class="text-textTitle font-Quicksand text-Header4 font-bold">Pet Walking & Sitting</p>
+                <div class="flex flex-col gap-3">
+                  <h1 class="text-textTitle font-Quicksand text-Header4 font-bold">Pet Walking & Sitting -</h1>
+                  <p class="text-textParagraph font-Quicksand text-Header4 font-semibold">Jadwal sibuk? Kami siap membantu! Tim profesional kami memastikan hewan peliharaan Anda mendapatkan perhatian, makanan, dan aktivitas fisik yang cukup, termasuk layanan jalan-jalan yang menyenangkan.</p>
                 </div>
-                <p class="text-textParagraph font-raleway text-Large font-semibold">Nikmati liburan dengan tenang, hewan peliharaan Anda akan tinggal di pet hotel kami yang nyaman, aman, bersih, dan penuh kasih sayang.</p>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="Keuntungan" class="flex gap-10 px-[120px] justify-center items-center">
-          <img src="{{ asset('images/cat grooming1.png') }}" class="w-[477px] h-[488px] rounded-b-full shadow-[16px_20px_6px_12px_rgba(197,112,93,0.25)]">  
-          <div class="flex flex-col gap-10">
-            <p class="text-textTitle font-Quicksand text-Header2 font-bold">Keuntungan memilih pawfect furever :</p>
-            <ul class="list-decimal px-5">
-              <li class="text-textParagraph font-raleway text-Header4 font-semibold m-2">Profesionalisme: Tim kami terdiri dari para profesional yang berpengalaman dan terlatih dalam menangani berbagai jenis hewan peliharaan.</li>
-              <li class="text-textParagraph font-raleway text-Header4 font-semibold m-2">Kenyamanan dan Keamanan: Fasilitas kami dirancang untuk memberikan lingkungan yang aman dan nyaman bagi hewan peliharaan Anda.</li>
-              <li class="text-textParagraph font-raleway text-Header4 font-semibold m-2">Perawatan yang Dipersonalisasi: Setiap hewan peliharaan mendapatkan perhatian dan perawatan yang sesuai dengan kebutuhan spesifik mereka.</li>
-              <li class="text-textParagraph font-raleway text-Header4 font-semibold m-2">Produk Berkualitas: Kami hanya menggunakan produk-produk perawatan yang terbaik dan aman bagi hewan peliharaan Anda.</li>
-            </ul>
+        <section class="flex flex-col gap-10 px-32">
+          <h1 class="text-textTitle font-Quicksand text-Header2 font-bold">Keuntungan Memilih Pawfect Furever :</h1>
+          <div class="flex gap-10 items-center justify-center">
+            <img src="{{ asset('images/sc_pg4.png') }}">
+            <ol class="flex flex-col gap-4">
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">1. Profesional & Berpengalaman : Tim kami terlatih menangani berbagai jenis hewan dengan penuh keahlian.</li>
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">2. Aman & Nyaman : Fasilitas dirancang untuk memastikan keamanan dan kenyamanan hewan kesayangan Anda.</li>
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">3. Perawatan Personal : Setiap hewan mendapat perhatian khusus sesuai kebutuhannya.</li>
+              <li class="text-textParagraph font-raleway text-Header4 font-medium">4. Produk Terbaik : Kami hanya menggunakan produk perawatan berkualitas dan aman.</li>
+            </ol>
           </div>
         </section>
 
