@@ -22,6 +22,10 @@ Route::get('/detail-reservasi', function () {
     return view('detail-reservasi');
 });
 
+Route::get('/eror-page', function () {
+    return view('eror-page');
+});
+
 Route::get('/login', [AuthController::class, 'showLogin'])->middleware("guest")->name('login.show');
 Route::get('/signup', [AuthController::class, 'showSignup'])->middleware("guest")->name('signup.show');
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
