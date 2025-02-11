@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Lupa Password</title>
 </head>
-<body class="bg-gradient-to-t from-[#F8EDE3] from-0% via-[#F6B171] via-50% to-[#F7D1AE] to-80% flex flex-col justify-center items-center py-5 px-32 gap-10">
+<body class="bg-gradient-to-t from-[#F8EDE3] from-0% via-[#F6B171] via-50% to-[#F7D1AE] to-80% flex flex-col justify-center items-center py-5 px-32 gap-10 bg-no-repeat">
     <div class="flex flex-col w-fit justify-center items-center">
         <img src="{{ asset('images/login_cat.png') }}" class="z-10 mb-[-90px]">
         <div class="flex flex-col gap-10 p-10 rounded-[20px] bg-Orange/20 items-center w-full drop-shadow-[4px_8px_4px_rgba(0,0,0,0.25)]">

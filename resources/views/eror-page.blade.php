@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Eror Page</title>
 </head>
-<body class="flex justify-center items-center px-32 h-screen bg-eror-page bg-cover bg-center">
+<body class="flex justify-center items-center px-32 h-screen bg-eror-page bg-cover bg-center bg-no-repeat">
     <div class="flex flex-col gap-10 items-center">
         <h1 class="text-textTitle font-raleway text-9xl font-bold">404</h1>
         <p class="text-textParagraph font-raleway text-Header4 font-medium text-center">Oops! Sepertinya kamu tersesat. Halaman yang kamu cari tidak ditemukan. Mari kembali ke halaman utama!</p>
