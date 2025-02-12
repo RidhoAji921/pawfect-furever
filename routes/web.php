@@ -34,3 +34,9 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/forgot-password', function () {
     return view('forgot-password');
 });
+
+Route::prefix('admin')->group(function (){
+    Route::get('/panel', function () {
+        return view('admin.panel');
+    })->name('admin.panel');
+});
