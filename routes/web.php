@@ -22,6 +22,10 @@ Route::get('/detail-reservasi', function () {
     return view('detail-reservasi');
 });
 
+Route::get('/panel-admin', function () {
+    return view('admin.panel');
+});
+
 Route::get('/login', [AuthController::class, 'showLogin'])->middleware("guest")->name('login.show');
 Route::get('/signup', [AuthController::class, 'showSignup'])->middleware("guest")->name('signup.show');
 Route::post('/signup', [AuthController::class, 'signup'])->name('signup');
@@ -29,4 +33,10 @@ Route::post('/login', [AuthController::class, 'login'])->name('login');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 Route::get('/forgot-password', function () {
     return view('forgot-password');
+});
+
+Route::prefix('admin')->group(function (){
+    Route::get('/panel', function () {
+        return view('admin.panel');
+    })->name('admin.panel');
 });
