@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
-<body class="flex flex-col justify-center items-center gap-[60px] bg-backgroundColor">
+<body class="flex flex-col justify-center items-center gap-[60px] bg-backgroundColor ">
   <nav class="flex w-full justify-between items-center px-[60px]">
     <a href="#Home">
       <img src="{{ asset('images/Logo.png') }}">
@@ -48,23 +48,23 @@
     @endauth
   </nav>
 
-  <div id="content" class="flex flex-col gap-20 justify-center items-center pb-10">
-    <section id="home" class="flex flex-col items-center gap-20 px-[120px] w-full">
-      <h1 class="text-textTitle font-Quicksand font-bold text-heroTitle/Bold text-center">Anabul Cantik dan Sehat
+  <div id="content" class="flex flex-col md:gap-20 gap-10 justify-center items-center pb-10 mx-auto">
+    <section id="home" class="flex flex-col justify-center items-center md:gap-20 gap-5 md:px-[120px] px-5 w-full">
+      <h1 class="text-textTitle font-Quicksand font-bold md:text-heroTitle/Bold text-Header2 text-center">Anabul Cantik dan Sehat
         Setiap Hari</h1>
       <div class="flex flex-col justfiy-center items-center gap-10">
-        <div class="flex gap-10 justify-center items-center">
-          <img src="{{ asset('images/Frame 13.png') }}" >
-          <div class="flex flex-col gap-10 justify-center items-center w-fit">
+        <div class="flex md:flex-row flex-col gap-10 justify-center items-center">
+          <img src="{{ asset('images/Frame 13.png') }}" class="md:h-full md:w-auto w-[400px] h-full object-cover">
+          <div class="flex flex-row md:flex-col md:gap-10 gap-5 justify-center items-center w-fit">
             <div class="w-[150px] h-[5px] bg-textTitle rounded-full"> </div>
-              <div class="flex flex-col gap-3 items-center">
+              <div class="flex flex-col gap-3 justify-center items-center w-fit">
                 <div class="flex gap-2 items-center">
                   <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-award"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.496 13.983l1.966 3.406a1.001 1.001 0 0 1 -.705 1.488l-.113 .011l-.112 -.001l-2.933 -.19l-1.303 2.636a1.001 1.001 0 0 1 -1.608 .26l-.082 -.094l-.072 -.11l-1.968 -3.407a8.994 8.994 0 0 0 6.93 -3.999z" /><path d="M11.43 17.982l-1.966 3.408a1.001 1.001 0 0 1 -1.622 .157l-.076 -.1l-.064 -.114l-1.304 -2.635l-2.931 .19a1.001 1.001 0 0 1 -1.022 -1.29l.04 -.107l.05 -.1l1.968 -3.409a8.994 8.994 0 0 0 6.927 4.001z" /><path d="M12 2l.24 .004a7 7 0 0 1 6.76 6.996l-.003 .193l-.007 .192l-.018 .245l-.026 .242l-.024 .178a6.985 6.985 0 0 1 -.317 1.268l-.116 .308l-.153 .348a7.001 7.001 0 0 1 -12.688 -.028l-.13 -.297l-.052 -.133l-.08 -.217l-.095 -.294a6.96 6.96 0 0 1 -.093 -.344l-.06 -.271l-.049 -.271l-.02 -.139l-.039 -.323l-.024 -.365l-.006 -.292a7 7 0 0 1 6.76 -6.996l.24 -.004z" /></svg>
                   <p class="text-textTitle font-Quicksand text-Header3 font-bold">500+</p>
                 </div>
-                <p class="text-textParagraph font-Quicksand text-Header4 font-semibold w-full"> Happy Customer</p>
+                <p class="text-textParagraph font-Quicksand text-Header4 font-semibold w-fit"> Happy Customer</p>
               </div>
-              <div class="flex flex-col gap-3 items-center">
+              <div class="flex flex-col gap-3 items-center w-fit">
                 <div class="flex gap-2 items-center">
                   <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="#570F29"  class="icon icon-tabler icons-tabler-filled icon-tabler-award"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M19.496 13.983l1.966 3.406a1.001 1.001 0 0 1 -.705 1.488l-.113 .011l-.112 -.001l-2.933 -.19l-1.303 2.636a1.001 1.001 0 0 1 -1.608 .26l-.082 -.094l-.072 -.11l-1.968 -3.407a8.994 8.994 0 0 0 6.93 -3.999z" /><path d="M11.43 17.982l-1.966 3.408a1.001 1.001 0 0 1 -1.622 .157l-.076 -.1l-.064 -.114l-1.304 -2.635l-2.931 .19a1.001 1.001 0 0 1 -1.022 -1.29l.04 -.107l.05 -.1l1.968 -3.409a8.994 8.994 0 0 0 6.927 4.001z" /><path d="M12 2l.24 .004a7 7 0 0 1 6.76 6.996l-.003 .193l-.007 .192l-.018 .245l-.026 .242l-.024 .178a6.985 6.985 0 0 1 -.317 1.268l-.116 .308l-.153 .348a7.001 7.001 0 0 1 -12.688 -.028l-.13 -.297l-.052 -.133l-.08 -.217l-.095 -.294a6.96 6.96 0 0 1 -.093 -.344l-.06 -.271l-.049 -.271l-.02 -.139l-.039 -.323l-.024 -.365l-.006 -.292a7 7 0 0 1 6.76 -6.996l.24 -.004z" /></svg>
                   <p class="text-textTitle font-Quicksand text-Header3 font-bold">2 Tahun</p>
@@ -75,7 +75,7 @@
             </div>
         </div>
           <div class="flex flex-col gap-10 justify-center items-center">
-          <p class="text-textParagraph text-Header3 font-semibold font-raleway text-center">Temukan rahasia perawatan terbaik untuk anabul kesayangan Anda, agar tetap sehat, cantik, dan bahagia setiap hari!</p>
+          <p class="text-textParagraph md:text-Header3 text-Header4 font-semibold font-raleway text-center">Temukan rahasia perawatan terbaik untuk anabul kesayangan Anda, agar tetap sehat, cantik, dan bahagia setiap hari!</p>
             <a href="reservasi-grooming" class="flex bg-Orange/70 gap-2 px-10 py-4 rounded-2xl text-white font-Quicksand text-Header4 font-bold items-center">Reservasi
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white"
                 class="icon icon-tabler icons-tabler-filled icon-tabler-paw">
@@ -115,13 +115,13 @@
         <h2 class="text-white font-Quicksand text-Header2 font-bold">20k/Malam</h2>
       </div>
     </section>
-    <section id="about" class="flex gap-10 px-[120px] w-full justify-center items-center">
+
+    <section id="about" class="flex md:flex-row flex-col md:gap-10 gap-5 md:px-[120px] px-5 w-full justify-center items-center">
       <div class="flex flex-col items-center gap-10">
-        <h1 class="text-textTitle text-Header1 font-Quicksand font-bold text-heroTitle w-full">Tempat Perawatan Terbaik untuk
+        <h1 class="text-textTitle md:text-Header1 text-Header2 font-Quicksand font-bold text-heroTitle w-full md:text-left text-center">Tempat Perawatan Terbaik untuk
           Sahabat Berbulu Anda</h1>
-        <p class="text-textParagraph font-raleway font-medium text-Header4 text-justify">Selamat datang di Pawfect Furever! Didirikan pada 2024, kami hadir dengan dedikasi untuk memberikan perawatan terbaik bagi hewan peliharaan Anda. Dengan tim profesional berpengalaman,
-           kami menawarkan layanan grooming yang memastikan penampilan, kesehatan, dan kebahagiaan 
-           hewan kesayangan Anda. Mari ciptakan pengalaman grooming yang menyenangkan bersama kami!</p>
+        <p class="text-textParagraph font-raleway font-medium md:text-Header4 text-Large  text-justify">Selamat datang di Pawfect Furever! Didirikan pada 2024, kami hadir dengan dedikasi untuk memberikan perawatan terbaik bagi hewan peliharaan Anda. Dengan tim profesional berpengalaman,
+        kami menawarkan layanan grooming yang memastikan penampilan, kesehatan, dan kebahagiaan hewan kesayangan Anda. Mari ciptakan pengalaman grooming yang menyenangkan bersama kami!</p>
       </div>
       <img src="{{ asset('images/Frame 84.png') }}">
     </section>
