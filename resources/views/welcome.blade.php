@@ -10,8 +10,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>Welcome</title>
 </head>
-<body class="flex flex-col justify-center items-center gap-[60px] bg-backgroundColor ">
+<body class="flex flex-col justify-center items-center gap-[60px] bg-backgroundColor w-full">
   <nav class="flex w-full justify-between items-center px-[60px]">
     <a href="#Home">
       <img src="{{ asset('images/Logo.png') }}">
@@ -48,13 +49,13 @@
     @endauth
   </nav>
 
-  <div id="content" class="flex flex-col md:gap-20 gap-10 justify-center items-center pb-10 mx-auto">
+  <div id="content" class="flex flex-col md:gap-20 gap-10 justify-center items-center pb-10 w-full">
     <section id="home" class="flex flex-col justify-center items-center md:gap-20 gap-5 md:px-[120px] px-5 w-full">
       <h1 class="text-textTitle font-Quicksand font-bold md:text-heroTitle/Bold text-Header2 text-center">Anabul Cantik dan Sehat
         Setiap Hari</h1>
       <div class="flex flex-col justfiy-center items-center gap-10">
         <div class="flex md:flex-row flex-col gap-10 justify-center items-center">
-          <img src="{{ asset('images/Frame 13.png') }}" class="md:h-full md:w-auto w-[400px] h-full object-cover">
+          <img src="{{ asset('images/Frame 13.png') }}" class="md:h-full md:w-auto w-80 h-full object-cover">
           <div class="flex flex-row md:flex-col md:gap-10 gap-5 justify-center items-center w-fit">
             <div class="w-[150px] h-[5px] bg-textTitle rounded-full"> </div>
               <div class="flex flex-col gap-3 justify-center items-center w-fit">
@@ -74,8 +75,8 @@
               <div class="w-[150px] h-[5px] bg-textTitle rounded-full"> </div>
             </div>
         </div>
-          <div class="flex flex-col gap-10 justify-center items-center">
-          <p class="text-textParagraph md:text-Header3 text-Header4 font-semibold font-raleway text-center">Temukan rahasia perawatan terbaik untuk anabul kesayangan Anda, agar tetap sehat, cantik, dan bahagia setiap hari!</p>
+          <div class="flex flex-col gap-10 justify-center items-center w-full">
+          <p class="text-textParagraph md:text-Header3 text-Header4 font-semibold font-raleway text-center w-full">Temukan rahasia perawatan terbaik untuk anabul kesayangan Anda, agar tetap sehat, cantik, dan bahagia setiap hari!</p>
             <a href="reservasi-grooming" class="flex bg-Orange/70 gap-2 px-10 py-4 rounded-2xl text-white font-Quicksand text-Header4 font-bold items-center">Reservasi
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white"
                 class="icon icon-tabler icons-tabler-filled icon-tabler-paw">
