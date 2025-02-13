@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ReservationController;
+use App\Http\Middleware\AdminMiddleware;
 
 Route::get('/', function () {
     return view('welcome');
@@ -35,8 +36,10 @@ Route::get('/forgot-password', function () {
     return view('forgot-password');
 });
 
-Route::prefix('admin')->group(function (){
-    Route::get('/panel', function () {
-        return view('admin.panel');
-    })->name('admin.panel');
+Route::middleware(['auth', AdminMiddleware::class])->group(function (){
+    Route::prefix('admin')->group(function (){
+        Route::get('/panel', function () {
+            return view('admin.panel');
+        })->name('admin.panel');
+    });
 });
