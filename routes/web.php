@@ -13,6 +13,7 @@ Route::get('/service', function () {
 });
 
 Route::get('/reservasi-grooming', [ReservationController::class, 'show'])->middleware("auth");
+Route::post('/reservasi-grooming', [ReservationController::class, 'store'])->name('store');
 
 Route::get('/cek-reservasi', function () {
     return view('cek-reservasi');
@@ -20,7 +21,7 @@ Route::get('/cek-reservasi', function () {
 
 Route::get('/detail-reservasi', function () {
     return view('detail-reservasi');
-});
+})->name("detail-reservasi");;
 
 Route::get('/login', [AuthController::class, 'showLogin'])->middleware("guest")->name('login.show');
 Route::get('/signup', [AuthController::class, 'showSignup'])->middleware("guest")->name('signup.show');
