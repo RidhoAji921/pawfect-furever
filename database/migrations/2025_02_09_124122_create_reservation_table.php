@@ -13,7 +13,10 @@ return new class extends Migration
     {
         Schema::create('reservations', function (Blueprint $table) {
             $table->id();
-            
+            $table->string('name');
+            $table->string('phone')->nullable();
+            $table->string('address')->nullable();
+            $table->enum('status', ['pending', 'Succeed', 'Driver Ongoing!', 'Grooming'])->default('pending'); // ENUM untuk status
             $table->timestamps();
         });
     }
