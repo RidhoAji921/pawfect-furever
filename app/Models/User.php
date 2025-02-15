@@ -46,4 +46,10 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+     // Relasi: Satu user bisa memiliki banyak reservasi
+     public function reservations()
+     {
+         return $this->hasMany(Reservation::class, 'name', 'name');
+     }
 }
