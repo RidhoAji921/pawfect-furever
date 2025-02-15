@@ -41,6 +41,10 @@ export default {
         'raleway': ['Raleway', 'sans-serif'],
         'Quicksand': ['Quicksand', 'sans-serif'],
       },
+
+      backgroundImage: {
+        'eror-page' : 'url("/public/images/404_page.png")'
+      },
     },
   },
   plugins: [],

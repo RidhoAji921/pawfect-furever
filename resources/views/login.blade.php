@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Login</title>
 </head>
-<body class="bg-gradient-to-t from-[#F8EDE3] from-0% via-[#F6B171] via-50% to-[#F7D1AE] to-80% flex flex-col justify-center items-center py-5 px-32 gap-10">
+<body class="bg-gradient-to-t from-[#F8EDE3] from-0% via-[#F6B171] via-50% to-[#F7D1AE] to-80% flex flex-col justify-center items-center py-5 px-32 gap-10 bg-no-repeat">
     @if(session('success'))
     <div class="bg-green-500 text-white p-3 rounded-md mb-4">
         {{ session('success') }}
