@@ -62,56 +62,40 @@
         <div class="flex flex-col justify-center items-center w-full">
             <img src="{{ asset('images/half face cat.png') }}" class="z-30 -mb-[32px]">
             <!-- FORM RESERVASI GROOMING -->
-            <form method="POST" action="{{ route('store') }}">
+            <form action="">
                 @csrf
                 <div class="flex flex-col gap-10 px-10 py-5 justify-center items-center bg-Orange/20 rounded-[36px] w-full z-20">
                     <div class="flex gap-10 w-full">
                         <div class="flex flex-col gap-3 w-full">
                             <p class="text-textTitle font-Quicksand text-Header4 font-semibold">Nama Pemilik :</p>
-                            <input type="text" name="name" placeholder="Masukan Nama Anda ..." 
-                                value="{{ old('name', Auth::user()->name) }}" 
-                                class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]" required>
+                            <input type="text" placeholder="Masukan Nama Anda ..." value="{{ Auth::user()->name }}" class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]"></input>
                         </div>
                         <div class="flex flex-col gap-3 w-full">
                             <p class="text-textTitle font-Quicksand text-Header4 font-semibold">Nomor Hp :</p>
-                            <input type="text" name="phone" placeholder="Masukan Nomor Telepon ..." 
-                                value="{{ old('phone', Auth::user()->phone ?? '') }}" 
-                                class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]">
+                            <input type="text" placeholder="Masukan Nomor Telepon ..." value="{{ Auth::user()->phone??"" }}" class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]"></input>
                         </div>
                     </div>
                     <div class="flex gap-10 w-full">
                         <div class="flex flex-col gap-3 w-full">
                             <p class="text-textTitle font-Quicksand text-Header4 font-semibold">Alamat :</p>
-                            <input type="text" name="address" placeholder="Masukan Alamat Anda ..." 
-                                value="{{ old('address', Auth::user()->address ?? '') }}" 
-                                class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]">
+                            <input type="text" placeholder="Masukan Alamat Anda ..." value="{{ Auth::user()->address??"" }}" class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px]"></input>
                         </div>
                         <div class="flex flex-col gap-3 w-full">
                             <label class="text-textTitle font-Quicksand text-Header4 font-semibold">Paket Grooming :</label>
-                            <select name="package_id" id="paketGrooming" class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px] appearance-none" required>
-                                <option value="">Pilih Paket</option>
+                            <select id="paketGrooming" value="" class="flex px-4 py-2 bg-Orange/70 text-white font-Quicksand text-Header4 font-medium justify-center items-center rounded-[16px] appearance-none">
                                 @foreach ($packages as $package)
-                                    <option value="{{ $package->id }}" {{ old('package_id') == $package->id ? 'selected' : '' }}>
-                                        {{ $package->name }} - Rp {{ number_format($package->price, 0, ',', '.') }}
-                                    </option>
+                                <option>{{ $package->name }} - Rp {{ number_format($package->price, 0, ',', '.') }}</option>
                                 @endforeach
                             </select>
                         </div>
                     </div>
-                    <button type="submit" class="flex gap-2 px-10 py-4 bg-Orange/10 rounded-[16px] justify-center items-center text-white font-Quicksand text-Header4 font-bold">
-                        Submit
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="white" class="icon icon-tabler icons-tabler-filled icon-tabler-paw">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z"/>
-                            <path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z"/>
-                            <path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z"/>
-                            <path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z"/>
-                            <path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z"/>
-                        </svg>
+                    <button class="flex gap-2 px-10 py-4 bg-Orange/10 rounded-[16px] justify-center items-center text-white font-Quicksand text-Header4 font-bold">Submit
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="white"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
                     </button>
                 </div>
                 <img src="{{ asset('images/Buntut.png') }}" class="z-10 -mt-[20px]">
-            </form>            
+            </div>
+            </form>
             
     </section>
     <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 rounded-t-[40px]">
