@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ReservationController;
 use App\Http\Middleware\AdminMiddleware;
+use App\Livewire\PanelContent;
 
 Route::get('/', function () {
     return view('welcome');
@@ -42,5 +43,6 @@ Route::middleware(['auth', AdminMiddleware::class])->group(function (){
         Route::get('/panel', function () {
             return view('admin.panel');
         })->name('admin.panel');
+        Route::get('/panel/{page?}', PanelContent::class)->where('page', 'dashboard|orders|users');
     });
 });
