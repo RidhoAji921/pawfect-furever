@@ -40,9 +40,6 @@ Route::get('/forgot-password', function () {
 
 Route::middleware(['auth', AdminMiddleware::class])->group(function (){
     Route::prefix('admin')->group(function (){
-        Route::get('/panel', function () {
-            return view('admin.panel');
-        })->name('admin.panel');
-        Route::get('/panel/{page?}', PanelContent::class)->where('page', 'dashboard|orders|users');
+        Route::get('/panel', PanelContent::class);
     });
 });

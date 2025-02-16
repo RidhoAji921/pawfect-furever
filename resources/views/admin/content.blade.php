@@ -1,9 +1,9 @@
 <div>
-    @if ($page == 'dashboard')
-        @include('admin.panels.dashboard')
-    @elseif ($page == 'users')
-        @include('admin.panels.users')
-    @elseif ($page == 'orders')
-        @include('admin.panels.orders')
-    @endif
+    <div wire:loading class="p-4 sm:ml-64 text-center text-gray-500">
+        <p>Loading halaman...</p>
+    </div>
+
+    <div wire:loading.remove>
+        @includeIf("admin.panels.$page")
+    </div>
 </div>
