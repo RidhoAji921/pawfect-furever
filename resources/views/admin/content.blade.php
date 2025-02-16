@@ -4,6 +4,12 @@
     </div>
 
     <div wire:loading.remove>
-        @includeIf("admin.panels.$page")
+        @if(View::exists("admin.panels.$page"))
+            @includeIf("admin.panels.$page")
+        @else
+            <div class="p-4 sm:ml-64 text-center">
+                <p>Halaman "{{ $page }}" tidak ditemukan</p>
+            </div>
+        @endif
     </div>
 </div>
