@@ -12,6 +12,7 @@ class UserTable extends Component
     public $selectedUser;
     public $name, $email, $phone, $address, $userId;
     public $userPassword;
+    public $isOperator = false;
 
     function mount() {
         $this->data = User::all();
@@ -44,11 +45,12 @@ class UserTable extends Component
     public function create()
     {
         User::create([
-            'email' => $this->email,
-            'name' => $this->name,
-            'phone' => $this->phone,
-            'address' => $this->address,
-            'password' => Hash::make($this->userPassword)
+            'email' => $this->pull('email'),
+            'name' => $this->pull('name'),
+            'phone' => $this->pull('phone'),
+            'address' => $this->pull('address'),
+            'password' => Hash::make($this->pull("userPassword")),
+            'is_admin' => $this->pull('isOperator')
         ]);
         $this->data = User::all();
         $this->dispatch('togle-add-modal');
