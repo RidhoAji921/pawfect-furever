@@ -12,17 +12,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <title>Lupa Password</title>
 </head>
-<body class="bg-gradient-to-t from-[#F8EDE3] from-0% via-[#F6B171] via-50% to-[#F7D1AE] to-80% flex flex-col justify-center items-center py-5 lg:px-32 px-5 w-full gap-10 bg-no-repeat h-full">
+<body class="bg-gradient-to-t from-[#F8EDE3] from-0% via-[#F6B171] via-50% to-[#F7D1AE] to-80% flex flex-col justify-center items-center py-5 lg:px-32 px-5 w-full gap-10 bg-no-repeat bg-cover min-h-screen">
     <div class="flex flex-col w-fit justify-center items-center h-full">
         <img src="{{ asset('images/login_cat.png') }}" class="z-10 mb-[-90px]">
         <div class="flex flex-col gap-10 p-10 rounded-[20px] bg-Orange/20 items-center w-full drop-shadow-[4px_8px_4px_rgba(0,0,0,0.25)]">
             <h1 class="text-textTitle font-Quicksand lg:text-Header2 text-Header3 font-bold">Lupa Password</h1>
             <form class="flex flex-col gap-5 w-full">
-                <div class="flex flex-col gap-3 w-full">
+                <div class="flex flex-col gap-5 w-full">
                     <label class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Email :</label>
                     <input type="email" placeholder="Masukan email anda ..." class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
-                </div>
-                <div class="flex flex-col gap-3 w-full">
                     <label class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Password Baru :</label>
                     <input type="password" placeholder="Masukan password anda ... " class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" ></input>
                     <label class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Konfirmasi Password Baru :</label>
@@ -37,6 +35,6 @@
         </div>
     </div>
     <p class="text-black/50 font-Quicksand lg:text-Large text-sm text-center font-semibold">pawfect furever © 2024 All Right Reserved</p>
-    <div class="rounded-full h-[3px] bg-white absolute -z-20 w-[1200px]"> </div>
+    <!-- <div class="rounded-full h-[3px] bg-white absolute -z-20 w-[1200px]"> </div> -->
 </body>
 </html>
