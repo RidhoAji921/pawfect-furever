@@ -100,8 +100,8 @@
         </div>
 
         <div class="flex flex-col justify-center items-center">
-          <img src="{{ asset('images/half face cat.png') }}" class="-z-10 -mb-[30px]">
-          <div class="flex flex-col gap-10 px-5 py-4 bg-Orange/20 rounded-[28px] ">
+          <img src="{{ asset('images/half face cat.png') }}" class="z-10 -mb-[30px]">
+          <div class="flex flex-col gap-10 px-5 py-4 bg-Orange/20 rounded-[28px]">
             <p class="text-textTitle font-Quicksand text-Header4 font-bold">Mandi Lengkap</p>
             <p class="text-textTitle font-Quicksand text-Header2 font-bold">Rp300.000</p>
             <div class="flex flex-col gap-4">
@@ -192,7 +192,7 @@
       </div>
     
     <!-- Modal -->
-    <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div id="modal" class="fixed inset-0 flex  items-center justify-center bg-black bg-opacity-50 hidden z-20">
         <div class=" flex flex-col p-10 gap-5 rounded-[40px] shadow-lg w-3/6 bg-Orange/20">
             <h2 class="text-textTitle font-Quicksand text-Header3 font-bold">Reservasi :</h2>
             <div class="flex justify-between px-10 py-2 w-full bg-Orange/70 rounded-lg">
