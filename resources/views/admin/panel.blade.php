@@ -14,12 +14,13 @@
     <title>Pawfect Panel</title>
     @livewireStyles
 </head>
-<body>
+<body class="bg-slate-600">
     <div>
         @livewire('sidebar')
         @livewire('panelContent')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 @livewireScripts
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
