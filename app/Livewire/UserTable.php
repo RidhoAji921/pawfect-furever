@@ -13,6 +13,11 @@ class UserTable extends Component
     public $name, $email, $phone, $address, $userId;
     public $userPassword;
     public $isOperator = false;
+    
+    protected $rules = [
+        'name' => 'required|string|max:255',
+        'email' => 'required|email|unique:users|max:255'
+    ];
 
     function mount() {
         $this->data = User::all();
@@ -31,6 +36,7 @@ class UserTable extends Component
 
     public function update()
     {
+        $this->validate();
         $user = User::findOrFail($this->userId);
         $user->update([
             'name' => $this->name,
@@ -40,10 +46,12 @@ class UserTable extends Component
         ]);
         $this->data = User::all();
         $this->dispatch('togle-edit-modal');
+        session()->flash('message', 'Data pengguna berhasil diubah!');
     }
 
     public function create()
     {
+        $this->validate();
         User::create([
             'email' => $this->pull('email'),
             'name' => $this->pull('name'),
@@ -54,6 +62,8 @@ class UserTable extends Component
         ]);
         $this->data = User::all();
         $this->dispatch('togle-add-modal');
+
+        session()->flash('message', 'Pengguna berhasil ditambahkan!');
     }
     
     function confirmDelete($id) {
@@ -62,11 +72,13 @@ class UserTable extends Component
     
     function delete() {
         $user = User::findOrFail($this->userId);
+        $username = $user->name;
         if ($user) {
             $user->delete();
         }
         $this->data = User::all();
         $this->dispatch('togle-delete-modal');
+        session()->flash('message', "Pengguna dengan id: {$this->userId} nama:{$username} berhasil dihapus!");
     }
 
     function resetProperties() {

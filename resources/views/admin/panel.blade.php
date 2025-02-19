@@ -19,8 +19,8 @@
         @livewire('sidebar')
         @livewire('panelContent')
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
-@livewireScripts
+    @livewireScripts
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
