@@ -190,9 +190,10 @@
           <button class="openModal text-white font-raleway text-Large font-bold py-4 bg-Orange/10 rounded-[16px]">Beli Sekarang</button>
         </div>
       </div>
-    
-    <!-- Modal -->
-    <div id="modal" class="fixed inset-0 flex  items-center justify-center bg-black bg-opacity-50 hidden z-20">
+    </section>
+
+     <!-- Modal -->
+     <div id="modal" class="fixed inset-0 flex  items-center justify-center bg-black bg-opacity-50 hidden z-20">
         <div class=" flex flex-col p-10 gap-5 rounded-[40px] shadow-lg w-3/6 bg-Orange/20">
             <h2 class="text-textTitle font-Quicksand text-Header3 font-bold">Reservasi :</h2>
             <div class="flex justify-between px-10 py-2 w-full bg-Orange/70 rounded-lg">
@@ -213,8 +214,6 @@
             </div>
         </div>
     </div>
-    
-    </section>
 
     <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 lg:px-80 px-5 rounded-t-[40px]">
         <div class="flex lg:flex-row flex-col lg:gap-[80px] gap-10 lg:w-[1183px] w-full">
