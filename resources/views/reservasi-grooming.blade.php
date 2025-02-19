@@ -213,7 +213,7 @@
             </div>
         </div>
     </div>
-
+    
     </section>
 
     <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 lg:px-80 px-5 rounded-t-[40px]">
