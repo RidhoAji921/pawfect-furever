@@ -222,8 +222,9 @@
             <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
         </div>
     </section>
-    <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 rounded-t-[40px]">
-        <div class="flex gap-[80px] w-[1183px]">
+    
+    <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 lg:px-80 px-5 rounded-t-[40px]">
+        <div class="flex lg:flex-row flex-col lg:gap-[80px] gap-10 lg:w-[1183px] w-full">
             <div class="flex flex-col gap-5 w-full">
                 <div class="flex flex-col gap-4">
                     <p class="text-black font-Quicksand text-Header4 font-bold">Whatsapp</p>
@@ -246,26 +247,26 @@
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
                 </div>
             </div>
-            <ul class="flex flex-col text-black font-Quicksand text-Header4 font-semibold gap-3 justify-center items-center w-full">pages
+            <ul class="flex flex-col text-black font-Quicksand text-Header4 font-semibold gap-3 justify-center lg:items-center items-start w-full">pages
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#home">Home</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#about">About</a>
+                  <a href="#about">About</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#service">Service</a>
+                  <a href="#service">Service</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#testimoni">Testimoni</a>
+                  <a href="#testimoni">Testimoni</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
                   <a href="cek reservasi">Cek Reservasi</a>
                 </li>
             </ul>
         </div>
-        <div class="flex h-[2px] w-[1238px] bg-black opacity-50"> </div>
-        <p class="text-black opacity-70 font-Quicksand text-Large font-medium">pawfect furever © 2024 All Right Reserved</p>
+        <div class="flex h-[3px] lg:w-[1238px] rounded-full w-full bg-black opacity-50"> </div>
+        <p class="text-black opacity-70 font-Quicksand text-Large font-medium text-center">pawfect furever © 2024 All Right Reserved</p>
   </footer>
 </body>
 </html>
