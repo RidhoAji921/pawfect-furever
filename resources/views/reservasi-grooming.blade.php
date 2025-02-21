@@ -51,10 +51,12 @@
     <section id="price" class="flex flex-col gap-10 lg:px-[120px] px-5 justify-center items-center w-full">
         <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header2 font-bold text-center">Daftar Harga Grooming</h1>
         <div class="flex gap-2 justify-center items-center bg-Orange/10/40 rounded-full w-fit">
-            <a href="" class="flex px-6 py-5 items-center text-white font-Quicksand lg:text-Header3 text-Base font-bold bg-Orange/10 rounded-full">Pet Grooming</a>
-            <a href="" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full ">Pet Hotel</a>
+            <button id="btn-grooming" href="" class="flex px-6 py-5 items-center text-white font-Quicksand lg:text-Header3 text-Base font-bold bg-Orange/10 rounded-full">Pet Grooming</button>
+            <button id="btn-hotel" href="" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full ">Pet Hotel</button>
         </div>
-      <div class="flex lg:flex-row flex-col gap-10 w-fit justify-center items-center">
+
+      <!-- Pet Grooming-->
+      <div id="grooming-content"class="flex lg:flex-row flex-col gap-10 w-fit justify-center items-center">
         <div class="flex flex-col gap-10 px-5 py-4 bg-Orange/20 rounded-[28px] h-fit">
           <p class="text-textTitle font-Quicksand text-Header4 font-bold">Mandi Biasa</p>
           <p class="text-textTitle font-Quicksand text-Header2 font-bold">Rp150.000</p>
@@ -190,6 +192,29 @@
           <button class="openModal text-white font-raleway text-Large font-bold py-4 bg-Orange/10 rounded-[16px]">Beli Sekarang</button>
         </div>
       </div>
+
+      <!-- Konten Pet Hotel -->
+    <div id="hotel-content" class="mt-6 flex space-x-4 hidden">
+        <div class="bg-[#EABF9F] p-6 rounded-lg text-[#5B1F1F] shadow-lg w-64">
+            <h2 class="text-lg font-semibold">Hotel Standard</h2>
+            <p class="text-2xl font-bold">Rp200.000 / malam</p>
+            <ul class="mt-2 space-y-1">
+                <li>✔ Kandang Nyaman</li>
+                <li>✔ Makanan & Minuman</li>
+                <li>✔ Bermain 2x sehari</li>
+            </ul>
+        </div>
+        <div class="bg-[#EABF9F] p-6 rounded-lg text-[#5B1F1F] shadow-lg w-64">
+            <h2 class="text-lg font-semibold">Hotel Premium</h2>
+            <p class="text-2xl font-bold">Rp350.000 / malam</p>
+            <ul class="mt-2 space-y-1">
+                <li>✔ Ruangan Ber-AC</li>
+                <li>✔ Makanan Premium</li>
+                <li>✔ Bermain Seharian</li>
+                <li>✔ Perawatan Harian</li>
+            </ul>
+        </div>
+    </div>
     </section>
 
      <!-- Modal -->
@@ -263,6 +288,45 @@
 
   <script>
 
+        document.addEventListener("DOMContentLoaded", function () {
+            const btnGrooming = document.getElementById("btn-grooming");
+            const btnHotel = document.getElementById("btn-hotel");
+            const groomingContent = document.getElementById("grooming-content");
+            const hotelContent = document.getElementById("hotel-content");
+
+            btnGrooming.addEventListener("click", function () {
+                groomingContent.classList.remove("hidden");
+                hotelContent.classList.add("hidden");
+                btnGrooming.classList.add("bg-[#FF8F8F]", "text-white");
+                btnHotel.classList.remove("bg-[#FF8F8F]", "text-white");
+            });
+
+            btnHotel.addEventListener("click", function () {
+                groomingContent.classList.add("hidden");
+                hotelContent.classList.remove("hidden");
+                btnHotel.classList.add("bg-[#FF8F8F]", "text-white");
+                btnGrooming.classList.remove("bg-[#FF8F8F]", "text-white");
+            });
+        });
+    // show content reservasi
+       function showContent(type) {
+            // Sembunyikan semua konten
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.add('hidden');
+            });
+
+            // Tampilkan konten yang dipilih
+            var selectedContent = document.getElementById(type);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+        }
+
+        // Tampilkan konten grooming secara default
+        showContent('grooming');
+
+    // auto Resize
         document.addEventListener("DOMContentLoaded", function () {
             const textarea = document.getElementById("autoResize");
 
