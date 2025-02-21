@@ -287,7 +287,7 @@
   </footer>
 
   <script>
-
+        // ubah content
         document.addEventListener("DOMContentLoaded", function () {
             const btnGrooming = document.getElementById("btn-grooming");
             const btnHotel = document.getElementById("btn-hotel");
@@ -308,6 +308,8 @@
                 btnGrooming.classList.remove("bg-[#FF8F8F]", "text-white");
             });
         });
+      //
+
     // show content reservasi
        function showContent(type) {
             // Sembunyikan semua konten
