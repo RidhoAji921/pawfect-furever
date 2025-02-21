@@ -1,7 +1,7 @@
 <div class="p-4 sm:ml-64">
-    <h1 class="font-semibold text-2xl mb-3">Pesanan</h1>
-    <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+    <h1 class="font-semibold text-2xl mb-3 text-white">Pesanan</h1>
+    <div class="relative overflow-x-auto rounded-md">
+        <table class="rounded-sm w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col" class="px-6 py-3">
@@ -19,7 +19,7 @@
                     <th scope="col" class="px-6 py-3">
                         Tanggal Selesai
                     </th>
-                    <th scope="col" class="px-6 py-3">
+                    <th scope="col" class="px-6 py-3 flex justify-center">
                         Status
                     </th>
                     <th scope="col" class="px-6 py-3">
@@ -44,8 +44,12 @@
                     <td class="px-6 py-4">
                         16/02/2025
                     </td>
-                    <td class="px-6 py-4">
-                        Grooming
+                    <td class="px-2 py-4 flex justify-center">
+                        <select name="" id="" class="font-normal w-[100px] text-white px-1 py-1 rounded-md bg-blue-600 hover:bg-blue-500">
+                            <option value="" class="font-normal text-white">Grooming</option>    
+                            <option value="" class="font-normal text-white">Paid</option>    
+                            <option value="" class="font-normal text-white">Finished</option>
+                        </select>                    
                     </td>
                     <td class="px-6 py-4">
                         <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Manage</a>
@@ -54,4 +58,8 @@
             </tbody>
         </table>
     </div>
-</div> 
+</div>
+
+@script
+<script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+@endscript
