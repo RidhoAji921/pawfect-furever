@@ -199,12 +199,12 @@
           <label for="Nama Pet :" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Nama Pet :</label>
         <input name="Nama Pet" value="" type="text" placeholder="Masukan nama pet anda ..." class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
       </div>
-        <div class="flex w-full justify-center gap-10 items-end">
+        <div class="flex lg:flex-row flex-col w-full justify-center lg:gap-10 gap-5 lg:items-end items-center">
           <div class="flex flex-col gap-3 max-w-[500px] w-full">
             <label for="" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check in :</label>
             <input name="Check in" value="" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
           </div>
-          <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="lg:rotate-0 rotate-90 icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
           <div class="flex flex-col gap-3 max-w-[500px]  w-full">
             <label for="" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check Out :</label>
             <input name="Check out" value="" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
