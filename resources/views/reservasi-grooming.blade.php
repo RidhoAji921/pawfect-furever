@@ -51,10 +51,12 @@
     <section id="price" class="flex flex-col gap-10 lg:px-[120px] px-5 justify-center items-center w-full">
         <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header2 font-bold text-center">Daftar Harga Grooming</h1>
         <div class="flex gap-2 justify-center items-center bg-Orange/10/40 rounded-full w-fit">
-            <a href="" class="flex px-6 py-5 items-center text-white font-Quicksand lg:text-Header3 text-Base font-bold bg-Orange/10 rounded-full">Pet Grooming</a>
-            <a href="" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full ">Pet Hotel</a>
+            <button id="btn-grooming" href="" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full">Pet Grooming</button>
+            <button id="btn-hotel" href="" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full ">Pet Hotel</button>
         </div>
-      <div class="flex lg:flex-row flex-col gap-10 w-fit justify-center items-center">
+
+      <!-- Pet Grooming-->
+      <div id="grooming-content"class="flex lg:flex-row flex-col gap-10 w-fit justify-center items-center">
         <div class="flex flex-col gap-10 px-5 py-4 bg-Orange/20 rounded-[28px] h-fit">
           <p class="text-textTitle font-Quicksand text-Header4 font-bold">Mandi Biasa</p>
           <p class="text-textTitle font-Quicksand text-Header2 font-bold">Rp150.000</p>
@@ -190,6 +192,28 @@
           <button class="openModal text-white font-raleway text-Large font-bold py-4 bg-Orange/10 rounded-[16px]">Beli Sekarang</button>
         </div>
       </div>
+
+      <!-- Konten Pet Hotel -->
+    <div id="hotel-content" class="flex flex-col hidden w-full justify-center items-center gap-10">
+      <div class="flex flex-col gap-3 max-w-[1150px] w-full">
+          <label for="Nama Pet :" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Nama Pet :</label>
+        <input name="Nama Pet" value="" type="text" placeholder="Masukan nama pet anda ..." class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
+      </div>
+        <div class="flex lg:flex-row flex-col w-full justify-center lg:gap-10 gap-5 lg:items-end items-center">
+          <div class="flex flex-col gap-3 max-w-[500px] w-full">
+            <label for="" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check in :</label>
+            <input name="Check in" value="" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
+          </div>
+          <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="lg:rotate-0 rotate-90 icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+          <div class="flex flex-col gap-3 max-w-[500px]  w-full">
+            <label for="" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check Out :</label>
+            <input name="Check out" value="" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></input>
+          </div>
+        </div>
+      <button id="" class="openModal flex gap-2 px-5 py-3 bg-Orange/10 text-white font-Quicksand text-Header4 font-bold rounded-2xl items-center">Konfirm
+        <svg  xmlns="http://www.w3.org/2000/svg"  width="32"  height="32"  viewBox="0 0 24 24"  fill="white"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
+      </button>
+    </div>
     </section>
 
      <!-- Modal -->
@@ -262,7 +286,51 @@
   </footer>
 
   <script>
+        // ubah content
+            document.addEventListener("DOMContentLoaded", function () {
+            const btnGrooming = document.getElementById("btn-grooming");
+            const btnHotel = document.getElementById("btn-hotel");
+            const groomingContent = document.getElementById("grooming-content");
+            const hotelContent = document.getElementById("hotel-content");
 
+            btnGrooming.classList.add("bg-[#FF8A8A]", "text-white"); 
+            hotelContent.classList.add("hidden"); 
+
+            btnGrooming.addEventListener("click", function () {
+                groomingContent.classList.remove("hidden");
+                hotelContent.classList.add("hidden");
+                btnGrooming.classList.add("bg-[#FF8A8A]", "text-white");
+                btnHotel.classList.remove("bg-[#FF8A8A]", "text-white");
+            });
+
+            btnHotel.addEventListener("click", function () {
+                groomingContent.classList.add("hidden");
+                hotelContent.classList.remove("hidden");
+                btnHotel.classList.add("bg-[#FF8A8A]", "text-white");
+                btnGrooming.classList.remove("bg-[#FF8A8A]", "text-white");
+            });
+        });
+      //
+
+    // show content reservasi
+      function showContent(type) {
+            // Sembunyikan semua konten
+            var contents = document.querySelectorAll('.content');
+            contents.forEach(function(content) {
+                content.classList.add('hidden');
+            });
+
+            // Tampilkan konten yang dipilih
+            var selectedContent = document.getElementById(type);
+            if (selectedContent) {
+                selectedContent.classList.remove('hidden');
+            }
+        }
+
+        // Tampilkan konten grooming secara default
+        showContent('grooming');
+
+    // auto Resize
         document.addEventListener("DOMContentLoaded", function () {
             const textarea = document.getElementById("autoResize");
 
