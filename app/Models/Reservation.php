@@ -9,13 +9,8 @@ class Reservation extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'phone',
-        'address',
-        'status',
-        'package_id',
-    ];
+    protected $fillable = ['user_id', 'package_id', 'status', 'note'];
+
 
     // Mengatur hubungan satu-ke-banyak dengan model Package
     public function package()

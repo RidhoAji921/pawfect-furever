@@ -9,27 +9,29 @@ use Illuminate\Http\Request;
 class ReservationController extends Controller
 {
     /* Menampilkan halaman reservasi-grooming.blade.php dan mengirimkan data paket grooming ke dalamnya. */
-    function show() {
-        $packages = Package::all();
-        return view('reservasi-grooming', compact('packages'));
+    public function show() {
+        // Ambil package dengan ID = 1
+        $package = Package::find(1);
+        
+        return view('reservasi-grooming', compact('package'));
     }
 
     /* Menyimpan reservasi baru ke database.*/
     public function store(Request $request)
+    
     {
+
         $request->validate([
-            'name' => 'required|string|max:255',    
-            'phone' => 'nullable|string',
-            'address' => 'nullable|string',
             'package_id' => 'required|exists:packages,id',
+            'note' => 'nullable|string',
         ]);
 
+        // Simpan reservasi ke database
         Reservation::create([
-            'name' => $request->name,
-            'phone' => $request->phone,
-            'address' => $request->address,
-            'status' => 'pending',
+            'user_id' => auth()->id(), // Menggunakan ID user yang sedang login
             'package_id' => $request->package_id,
+            'status' => 'pending', // Status default
+            'note' => $request->note, // Menyimpan catatan jika ada
         ]);
 
         return redirect()->route('detail-reservasi')->with('success', 'Reservasi berhasil dibuat.');
