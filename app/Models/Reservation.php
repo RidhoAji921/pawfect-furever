@@ -10,10 +10,8 @@ class Reservation extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['user_id', 'package_id', 'status', 'note', 'finished_at'];
+    protected $fillable = ['reservation_identifier', 'user_id', 'package_id', 'status', 'note', 'finished_at'];
 
-
-    // Mengatur hubungan satu-ke-banyak dengan model Package
     public function package()
     {
         return $this->belongsTo(Package::class);
@@ -29,5 +27,16 @@ class Reservation extends Model
         $type = DB::select("SHOW COLUMNS FROM reservations WHERE Field = ?", [$column])[0]->Type;
         preg_match("/^enum\((.*)\)$/", $type, $matches);
         return explode(",", str_replace("'", "", $matches[1]));
+    }
+    
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function ($reservation) {
+            $package_code = $reservation->package->code;
+            $timestamp = time();
+            $reservation->reservation_identifier = $package_code . "-" . $timestamp;
+        });
     }
 }
