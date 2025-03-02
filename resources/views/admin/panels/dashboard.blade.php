@@ -1,5 +1,5 @@
 <div class="p-4 sm:ml-64">
-    <h1 class="font-semibold text-2xl mb-3">Dashboard</h1>
+    <h1 class="font-semibold text-2xl mb-3 text-gray-900 dark:text-white">Dashboard</h1>
     <div class="max-w-sm p-6 mb-3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ count($data['users'] ?? []) }}</h5>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Pengguna</p>
@@ -20,4 +20,5 @@
             </svg>
         </a>
     </div>
-</div> 
+    @livewire('BusinessReport')
+</div>
