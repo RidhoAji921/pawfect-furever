@@ -1,4 +1,5 @@
-<div>
+<div class="my-5 mt-2">
+    <h1 class="font-semibold text-2xl mb-3 text-gray-900 dark:text-white">Grafik Order Dibuat dan Selesai</h1>
     <div id="ordersChart"></div>
 </div>
 
@@ -10,7 +11,7 @@
 <script>
     let options = {
         chart: {
-            type: "line",
+            type: "bar",
             height: 350
         },
         series: [
@@ -24,11 +25,34 @@
             }
         ],
         xaxis: {
+            type: "datetime",
             categories: @json($dates),
             labels: {
-                rotate: -45 // Agar label tanggal lebih rapi
+                rotate: -45,
+                style: {
+                    colors: "#ffffff",
+                    fontSize: "12px"
+                }
             }
         },
+        yaxis: [
+            {
+                title: {
+                    text: "Pesanan",
+                    style:{
+                        color: "#ffffff",
+                        fontSize: "12px",
+                        fontWeight: "bold"
+                    }
+                },
+                labels:{
+                    style: {
+                        colors: "#ffffff",
+                        fontSize: "12px"
+                    }
+                }
+            },
+        ],
         colors: ["#007bff", "#28a745"]
     };
 
