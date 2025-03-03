@@ -86,7 +86,7 @@ class UserTable extends Component
     }
     public function render()
     {
-        return view('admin.panels.user-table', [
+        return view('admin.panels.livewire.user-table', [
             'data' => $this->data
         ]);
     }

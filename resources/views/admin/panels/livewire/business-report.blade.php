@@ -1,5 +1,5 @@
 <div class="my-5 mt-2">
-    <h1 class="font-semibold text-2xl mb-3 text-gray-900 dark:text-white">Grafik Order Dibuat dan Selesai</h1>
+    <h1 class="font-semibold text-2xl mb-3 text-gray-900 dark:text-white">Order Dibuat dan Selesai</h1>
     <div id="ordersChart"></div>
 </div>
 

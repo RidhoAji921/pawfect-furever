@@ -200,7 +200,7 @@
         <div class="flex flex-col gap-3 max-w-[1150px] w-full">
           <label for="nama_pet" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Nama Pet :</label>
           <input name="nama_pet" id="nama_pet" value="{{ old('nama_pet') }}" type="text" placeholder="Masukan nama pet anda ..." class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" required></input>
-          @error('nama-pet')
+          @error('nama_pet')
           <div class="text-[#FF181C] font-Quicksand text-base font-medium">Nama peliharaan wajib diisi!</div>
           @enderror
         </div>
@@ -209,15 +209,24 @@
             <label for="check_in" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check in :</label>
             <input name="check_in" id="check_in" value="{{ old('check_in') }}" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" required></input>
           </div>
+          @error('check_in')
+          <div class="text-[#FF181C] font-Quicksand text-base font-medium">Tanggal check-in tidak valid!</div>
+          @enderror
           <svg xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="lg:rotate-0 rotate-90 icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
           <div class="flex flex-col gap-3 max-w-[500px]  w-full">
             <label for="check_out" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check Out :</label>
             <input name="check_out" id="check_out" value="{{ old('check_out') }}" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" required></input>
+            @error('check_out')
+            <div class="text-[#FF181C] font-Quicksand text-base font-medium">Tanggal check-out tidak valid!</div>
+            @enderror
           </div>
         </div>
         <div class="w-full">
-          <p class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Jumlah hari: <span id="total_days">Tanggal check-in dan check-out tidak valid</span></p>
-          <p class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Total harga: <span id="total_price">Tanggal check-in dan check-out tidak valid</span></p>
+          <p class="text-textTitle font-Quicksand lg:text-large text-Large font-bold">Jumlah hari: <span id="total_days">Tanggal check-in dan check-out tidak valid</span></p>
+          <p class="text-textTitle font-Quicksand lg:text-large text-Large font-bold">Total harga: <span id="total_price">Tanggal check-in dan check-out tidak valid</span></p>
+        </div>
+        <div class="w-full">
+          <textarea name="note" id="note" value="{{ old('note') }}" type="date" placeholder="Note" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></textarea>
         </div>
         <input type="hidden" name="days_total" id="days_total" value="{{ old("days_total") }}">
         <input type="hidden" name="price_total" id="price_total" value="{{ old("price_total") }}">
@@ -324,6 +333,7 @@
             hotelContent.classList.add("hidden");
             btnGrooming.classList.add("bg-[#FF8A8A]", "text-white");
             btnHotel.classList.remove("bg-[#FF8A8A]", "text-white");
+            localStorage.setItem("activeTab", "grooming");
         });
 
         btnHotel.addEventListener("click", function () {
@@ -331,6 +341,7 @@
             hotelContent.classList.remove("hidden");
             btnHotel.classList.add("bg-[#FF8A8A]", "text-white");
             btnGrooming.classList.remove("bg-[#FF8A8A]", "text-white");
+            localStorage.setItem("activeTab", "pet-hotel");
         });
     });
 
@@ -390,7 +401,7 @@
   });
 
   function showTabFromHash() {
-    let hash = window.location.hash.substring(1) || "grooming";
+    let hash = window.location.hash.substring(1) || localStorage.getItem("activeTab") || "grooming";
     const btnGrooming = document.getElementById("btn-grooming");
     const btnHotel = document.getElementById("btn-hotel");
     const groomingContent = document.getElementById("grooming-content");

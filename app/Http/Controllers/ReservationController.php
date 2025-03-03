@@ -45,6 +45,7 @@ class ReservationController extends Controller
             'check_out'=>'required|date|after:check_in',
             'days_total'=>'required|integer',
             'price_total'=>'required|integer',
+            'note'=>'nullable|string',
         ]);
         PetHotelReservation::create([
             'user_id' => Auth::user()->id,
@@ -53,6 +54,7 @@ class ReservationController extends Controller
             'check_out' => $request->check_out,
             'total_days' => $request->days_total,
             'total_price' => $request->price_total,
+            'user_note' => $request->note,
         ]);
 
         return redirect()->route('detail-reservasi')->with('success', 'Reservasi berhasil dibuat.');

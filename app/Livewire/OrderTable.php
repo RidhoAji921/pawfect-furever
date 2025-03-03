@@ -43,6 +43,6 @@ class OrderTable extends Component
 
     public function render()
     {
-        return view('admin.panels.order-table');
+        return view('admin.panels.livewire.order-table');
     }
 }

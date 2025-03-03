@@ -34,7 +34,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($data as $order)    
+                @forelse ($data as $order)    
                 <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         {{ $loop->iteration }}
@@ -82,7 +82,11 @@
                         <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Manage</a>
                     </td>
                 </tr>
-                @endforeach
+                    @empty
+                    <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                        <td colspan="9" class="px-6 py-4">Tidak ada pesanan, pesanan akan muncul di sini ketika ada pesanan</td>
+                    </tr>
+                @endforelse
             </tbody>
         </table>
     </div>
