@@ -29,7 +29,7 @@
                         Status
                     </th>
                     <th scope="col" class="px-6 py-3">
-                        Action
+                        Keterangan
                     </th>
                 </tr>
             </thead>
@@ -49,7 +49,7 @@
                         {{ $order->package->name }}
                     </td>
                     <td class="px-6 py-4 text-center">
-                        {{ $order->note??"-" }}
+                        {{ $order->user_note??"-" }}
                     </td>
                     <td class="px-6 py-4 text-center">
                         {{ \Carbon\Carbon::parse($order->created_at)->format('d/m/Y H:i:s') }}
@@ -78,8 +78,8 @@
                             @endforeach
                         </select>                    
                     </td>
-                    <td class="px-6 py-4">
-                        <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Manage</a>
+                    <td class="px-1 py-4">
+                        <textarea wire:change="updateNote({{ $order->id }}, $event.target.value)" id="" cols="10" rows="1" placeholder="Ketik note..." class="w-full odd:bg-white odd:dark:bg-gray-900 border-b-2 border-black">{{ $order->annotation }}</textarea>
                     </td>
                 </tr>
                     @empty

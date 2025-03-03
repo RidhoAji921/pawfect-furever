@@ -32,7 +32,7 @@ class ReservationController extends Controller
             'user_id' => Auth::user()->id, // Menggunakan ID user yang sedang login
             'package_id' => $request->package_id,
             'status' => 'pending', // Status default
-            'note' => $request->note, // Menyimpan catatan jika ada
+            'user_note' => $request->note, // Menyimpan catatan jika ada
         ]);
 
         return redirect()->route('detail-reservasi')->with('success', 'Reservasi berhasil dibuat.');

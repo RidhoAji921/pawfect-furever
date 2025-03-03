@@ -25,6 +25,8 @@ class OrderTable extends Component
             $this->data = Reservation::all();
         }
         else{
+            if(strtolower($this->search) == "mandi lengkap"){ $this->search = "MLK";}
+            else if(strtolower($this->search) == "mandi biasa"){ $this->search = "MBS";}
             $this->data = Reservation::where("reservation_identifier", 'like', '%' . $this->search . '%')->get();
         }
     }
@@ -36,6 +38,17 @@ class OrderTable extends Component
             $order->update([
                 'status' => $newStatus,
                 'finished_at' => $newStatus === 'Finished' ? Carbon::now() : null
+            ]);
+            $this->updatedSearch();
+        }
+    }
+
+    public function updateNote($orderId, $newNote)
+    {
+        $order = Reservation::find($orderId);
+        if($order){
+            $order->update([
+                'annotation' => $newNote,
             ]);
             $this->updatedSearch();
         }

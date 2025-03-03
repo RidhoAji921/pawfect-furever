@@ -40,22 +40,22 @@
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             {{ $loop->iteration }}
                         </th>
-                        <td class="px-6 py-4">
+                        <td class="px-1 py-4">
                             {{ $order->reservation_identifier }}
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-1 py-4">
                             {{ $order->user->name }}
                         </td>
-                        <td class="px-6 py-4">
+                        <td class="px-1 py-4">
                             {{ $order->user_note??"-" }}
                         </td>
-                        <td class="px-6 py-4 text-center">
+                        <td class="px-1 py-4 text-center">
                             {{ \Carbon\Carbon::parse($order->created_at)->format('d/m/Y H:i:s') }}
                         </td>
-                        <td class="px-6 py-4 text-center">
+                        <td class="px-1 py-4 text-center">
                             {{ \Carbon\Carbon::parse($order->check_in)->format('d/m/Y') }}
                         </td>
-                        <td class="px-6 py-4 text-center">
+                        <td class="px-1 py-4 text-center">
                             {{ \Carbon\Carbon::parse($order->check_out)->format('d/m/Y') }}
                         </td>
                         @php
@@ -82,8 +82,8 @@
                                 @endforeach
                             </select>                    
                         </td>
-                        <td class="px-6 py-4">
-                            <textarea name="" id="" cols="10" rows="1"></textarea>
+                        <td class="px-1 py-4">
+                            <textarea wire:change="updateNote({{ $order->id }}, $event.target.value)" id="" cols="10" rows="1" placeholder="Ketik note..." class="w-full odd:bg-white odd:dark:bg-gray-900 border-b-2 border-black">{{ $order->annotation }}</textarea>
                         </td>
                     </tr>
                     @empty
