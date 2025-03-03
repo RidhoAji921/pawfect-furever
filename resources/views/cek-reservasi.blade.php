@@ -12,40 +12,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col justify-center items-center overflow-x-hidden gap-16 bg-backgroundColor">
-    <nav class="flex w-full justify-between items-center px-[60px]">
-        <a href="#Home">
-        <img src="{{ asset('images/Logo.png') }}">
-        </a>
-        <ul class="flex text-black font-Header font-medium gap-10">
-        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
-            <a href="welcome#home">Home</a>
-        </li>
-        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
-            <a href="welcome#about">About</a>
-        </li>
-        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
-            <a href="welcome#service">Services</a>
-        </li>
-        <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
-            <a href="welcome#testimoni">Testimoni</a>
-        </li>
-        </ul>
-        <a href="cek reservasi" class="flex text-white font-Quicksand text-Header4 font-medium gap-2 px-3 py-2 bg-Orange/10 rounded-[12px] items-center">Cek Reservasi
+<nav class="flex w-full justify-between items-center px-[60px]">
+    <a href="/">
+      <img src="{{ asset('images/Logo.png') }}">
+    </a>
+    <ul class="flex text-black font-Header font-medium gap-10">
+      <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+        <a href="/#home">Home</a>
+      </li>
+      <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+        <a href="/#about">About</a>
+      </li>
+      <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+        <a href="/#service">Services</a>
+      </li>
+      <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
+        <a href="/#testimoni">Testimoni</a>
+      </li>
+    </ul>
+    @auth
+    <div class="flex items-center gap-2">
+      <p class="text-textParagraph font-Quicksand text-Base font-medium">Selamat datang, {{ Auth::user()->name }}!</p>
+      <a href="/cek-reservasi" class="flex text-white font-Quicksand text-Large font-medium gap-2 px-3 py-2 bg-Orange/10 rounded-[12px] items-center">Cek Reservasi
         <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="white"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
-        </a>
-    </nav>
-  <section id="content" class="flex flex-col gap-10 justify-center items-center w-full px-[220px]">
-        <h1 class="text-textTitle font-Quicksand text-Header1 font-bold">Cek Reservasi</h1>
+      </a>
+      <form method="POST" action="{{ route('logout') }}">
+        @csrf
+        <button type="submit" class="text-textParagraph font-Quicksand text-Base font-medium" href="">Logout</button>
+      </form>
+    </div>
+    @else
+    <a href="/login" class="flex text-white font-Quicksand text-Large font-medium gap-2 px-3 py-2 bg-Orange/10 rounded-[12px] items-center">Login
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="white"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
+    </a>
+    @endauth
+  </nav>
+
+  <section id="content" class="flex flex-col gap-10 justify-center items-center w-full lg:px-[220px] px-5">
+        <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header2 text-center font-bold">Cek Reservasi</h1>
         <div class="flex flex-col gap-3 w-full">
             <p class="text-textTitle font-Quicksand text-Header4 font-bold">No hp :</p>
-            <input type="text" placeholder="Masukan Nomor Telepon ..." class="text-white opacity-text-60 font-Quicksand text-Header4 font-medium bg-Orange/70 px-4 py-2 rounded-[16px]"></input>
+            <input type="text" placeholder="Masukan Nomor Telepon ..." class="text-white opacity-text-60 font-Quicksand lg:text-Header4 text-large font-medium bg-Orange/70 px-4 py-2 rounded-[16px]"></input>
         </div>
-        <button class="flex text-white font-Quicksand text-Header4 font-bold gap-2 px-10 py-4 bg-Orange/10 rounded-[16px] items-center w-fit">Submit
+        <button class="flex text-white font-Quicksand lg:text-Header4 text-Large font-bold gap-2 px-10 lg:py-4 py-3 bg-Orange/10 rounded-[16px] items-center w-fit">Submit
         <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="white"  class="icon icon-tabler icons-tabler-filled icon-tabler-paw"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 10c-1.32 0 -1.983 .421 -2.931 1.924l-.244 .398l-.395 .688a50.89 50.89 0 0 0 -.141 .254c-.24 .434 -.571 .753 -1.139 1.142l-.55 .365c-.94 .627 -1.432 1.118 -1.707 1.955c-.124 .338 -.196 .853 -.193 1.28c0 1.687 1.198 2.994 2.8 2.994l.242 -.006c.119 -.006 .234 -.017 .354 -.034l.248 -.043l.132 -.028l.291 -.073l.162 -.045l.57 -.17l.763 -.243l.455 -.136c.53 -.15 .94 -.222 1.283 -.222c.344 0 .753 .073 1.283 .222l.455 .136l.764 .242l.569 .171l.312 .084c.097 .024 .187 .045 .273 .062l.248 .043c.12 .017 .235 .028 .354 .034l.242 .006c1.602 0 2.8 -1.307 2.8 -3c0 -.427 -.073 -.939 -.207 -1.306c-.236 -.724 -.677 -1.223 -1.48 -1.83l-.257 -.19l-.528 -.38c-.642 -.47 -1.003 -.826 -1.253 -1.278l-.27 -.485l-.252 -.432c-1.011 -1.696 -1.618 -2.099 -3.053 -2.099z" /><path d="M19.78 7h-.03c-1.219 .02 -2.35 1.066 -2.908 2.504c-.69 1.775 -.348 3.72 1.075 4.333c.256 .109 .527 .163 .801 .163c1.231 0 2.38 -1.053 2.943 -2.504c.686 -1.774 .34 -3.72 -1.076 -4.332a2.05 2.05 0 0 0 -.804 -.164z" /><path d="M9.025 3c-.112 0 -.185 .002 -.27 .015l-.093 .016c-1.532 .206 -2.397 1.989 -2.108 3.855c.272 1.725 1.462 3.114 2.92 3.114l.187 -.005a1.26 1.26 0 0 0 .084 -.01l.092 -.016c1.533 -.206 2.397 -1.989 2.108 -3.855c-.27 -1.727 -1.46 -3.114 -2.92 -3.114z" /><path d="M14.972 3c-1.459 0 -2.647 1.388 -2.916 3.113c-.29 1.867 .574 3.65 2.174 3.867c.103 .013 .2 .02 .296 .02c1.39 0 2.543 -1.265 2.877 -2.883l.041 -.23c.29 -1.867 -.574 -3.65 -2.174 -3.867a2.154 2.154 0 0 0 -.298 -.02z" /><path d="M4.217 7c-.274 0 -.544 .054 -.797 .161c-1.426 .615 -1.767 2.562 -1.078 4.335c.563 1.451 1.71 2.504 2.941 2.504c.274 0 .544 -.054 .797 -.161c1.426 -.615 1.767 -2.562 1.078 -4.335c-.563 -1.451 -1.71 -2.504 -2.941 -2.504z" /></svg>
         </button>
   </section>
-  <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 rounded-t-[40px]">
-        <div class="flex gap-[80px] w-[1183px]">
+  
+  <footer id="footer" class="flex flex-col bg-footerColor w-full justify-center items-center gap-10 py-5 lg:px-80 px-5 rounded-t-[40px]">
+        <div class="flex lg:flex-row flex-col lg:gap-[80px] gap-10 lg:w-[1183px] w-full">
             <div class="flex flex-col gap-5 w-full">
                 <div class="flex flex-col gap-4">
                     <p class="text-black font-Quicksand text-Header4 font-bold">Whatsapp</p>
@@ -68,26 +83,26 @@
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" /><path d="M16.5 7.5l0 .01" /></svg>
                 </div>
             </div>
-            <ul class="flex flex-col text-black font-Quicksand text-Header4 font-semibold gap-3 justify-center items-center w-full">pages
+            <ul class="flex flex-col text-black font-Quicksand text-Header4 font-semibold gap-3 justify-center lg:items-center items-start w-full">pages
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#home">Home</a>
+                  <a href="/#home">Home</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#about">About</a>
+                  <a href="/#about">About</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#service">Service</a>
+                  <a href="/#service">Service</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="welcome#testimoni">Testimoni</a>
+                  <a href="/#testimoni">Testimoni</a>
                 </li>
                 <li class="text-black font-Quicksand text-Header4 font-medium">
-                  <a href="cek reservasi">Cek Reservasi</a>
+                  <a href="/cek-reservasi">Cek Reservasi</a>
                 </li>
             </ul>
         </div>
-        <div class="flex h-[2px] w-[1238px] bg-black opacity-50"> </div>
-        <p class="text-black opacity-70 font-Quicksand text-Large font-medium">pawfect furever © 2024 All Right Reserved</p>
+        <div class="flex h-[3px] lg:w-[1238px] rounded-full w-full bg-black opacity-50"> </div>
+        <p class="text-black opacity-70 font-Quicksand text-Large font-medium text-center">pawfect furever © 2024 All Right Reserved</p>
   </footer>
 </body>
 </html>

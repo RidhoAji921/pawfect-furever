@@ -15,7 +15,8 @@ Route::get('/service', function () {
 });
 
 Route::get('/reservasi-grooming', [ReservationController::class, 'show'])->middleware("auth");
-Route::post('/reservasi-grooming', [ReservationController::class, 'store'])->name('store');
+Route::post('/reservasi-grooming', [ReservationController::class, 'store'])->name('reservation.store')->middleware('auth');
+Route::post('/reservasi-pet-hotel', [ReservationController::class, 'petHotelStore'])->name('reservation-hotel.store')->middleware('auth');
 
 Route::get('/cek-reservasi', function () {
     return view('cek-reservasi');
