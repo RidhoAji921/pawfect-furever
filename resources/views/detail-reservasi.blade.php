@@ -49,179 +49,268 @@
   </nav>
 
     <section class="flex flex-col gap-10 px-[120px] justify-center items-center w-full">
-        <h1 class="text-textTitle font-Quicksand text-Header1 font-bold">Detail Reservasi</h1>
-        <div class="flex flex-col gap-5 justify-center items-center w-full">
-            <div class="flex flex-warp gap-10 w-full justify-center items-center">
-                <div class="flex gap-4 px-4 py-4 bg-Orange/20 w-[530px] rounded-[36px]">
-                    <div class="flex flex-col gap-2 w-fit justify-center items-center">
-                        <p class="text-textTitle font-Quicksand text-Large font-semibold">Sep</p>
-                        <div class="flex w-[30px] h-[30px] rounded-full bg-Orange/70 items-center justify-center text-textTitle font-Quicksand text-Large font-medium">18</div>
-                        <div class="bg-textTitle h-full w-[4px] rounded-full"> </div>
-                    </div>
-                    <div class="flex flex-col gap-3 px-4 py-2 border border-black rounded-[20px] w-full">
-                        <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                            <p class="text-black opacity-70 font-Quicksand text-Large font-medium">ID#6GD23</p>
-                        </div>
-                        <p class="text-black font-Quicksand text-Header3 font-semibold">wildan</p>
-                        <div class="flex justify-center items-center gap-4 w-fit">
-                            <p class=""class="text-black font-Quicksand text-Base font-medium">Status : </p>
-                            <div class="flex px-2 py-1 border border-black rounded-tr-[20px] rounded-bl-[8px]">
-                                <p class="text-statusGrooming font-Quicksand text-Base font-medium">• Grooming</p>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-col gap-3 w-[80px]">
-                                <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
-                                <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
-                            </div>
-                            <div class="flex gap-2">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-bell-ringing"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z" /><path d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z" /><path d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" /><path d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" /></svg>
-                                <p class="text-black font-Quicksand text-Base font-medium">Nyalakan Notifikasi</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">No Telp : 0812123456789</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Alamat : Jl Raya No.1</p>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">Detail Transaksi</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Paket Mandi Biasa - Rp150.000</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Pet Hotel - Rp20.000</p>
-                            <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                            <p class="text-black font-Quicksand text-Large font-bold">Rp170.000</p>
-                            </div>
-                        </div>
+        <h1 class="text-textTitle font-Quicksand text-Header1 font-bold">Profile</h1>
+        <div id="detail-account" class="flex flex-col w-full justify-center items-center">
+            <div class="flex justify-center items-center px-5 py-4 max-w-[680px] w-full bg-Orange/20 rounded-2xl border border-textTitle -mb-5 z-10">
+                <div class="flex flex-col">
+                    <p class="text-textTitle font-raleway text-Header3 font-semibold">Email :</p>
+                    <p class="text-textParagraph font-Quicksand text-Header4 font-bold">Wildan*******@gmail.com</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center px-5 pt-10 pb-5 w-full bg-Orange/20 rounded-2xl border border-textTitle">
+                <div class="flex flex-col gap-3">
+                    <p class="text-textTitle font-raleway text-Header3 font-semibold">Nama :</p>
+                    <div class="flex gap-3 items-center">
+                        <p class="text-textParagraph font-Quicksand text-Header4 font-bold">Muhammad Wildan</p>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                     </div>
                 </div>
-                <div class="flex gap-4 px-4 py-4 bg-Orange/20 w-[530px] rounded-[36px]">
-                    <div class="flex flex-col gap-2 w-fit justify-center items-center">
-                        <p class="text-textTitle font-Quicksand text-Large font-semibold">Sep</p>
-                        <div class="flex w-[30px] h-[30px] rounded-full bg-Orange/70 items-center justify-center text-textTitle font-Quicksand text-Large font-medium">18</div>
-                        <div class="bg-textTitle h-full w-[4px] rounded-full"> </div>
+                <div class="flex flex-col gap-3">
+                    <p class="text-textTitle font-raleway text-Header3 font-semibold">No Telp :</p>
+                    <div class="flex gap-3 items-center">
+                        <p class="text-textParagraph font-Quicksand text-Header4 font-bold">08123456789010</p>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                     </div>
-                    <div class="flex flex-col gap-3 px-4 py-2 border border-black rounded-[20px] w-full">
-                        <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                            <p class="text-black opacity-70 font-Quicksand text-Large font-medium">ID#6GD23</p>
-                        </div>
-                        <p class="text-black font-Quicksand text-Header3 font-semibold">wildan</p>
-                        <div class="flex justify-center items-center gap-4 w-fit">
-                            <p class=""class="text-black font-Quicksand text-Base font-medium">Status : </p>
-                            <div class="flex px-2 py-1 border border-black rounded-tr-[20px] rounded-bl-[8px]">
-                                <p class="text-statusSelesai font-Quicksand text-Base font-medium">• Selesai</p>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-col gap-3 w-[80px]">
-                                <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
-                                <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
-                            </div>
-                            <div class="flex gap-2">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-bell-ringing"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z" /><path d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z" /><path d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" /><path d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" /></svg>
-                                <p class="text-black font-Quicksand text-Base font-medium">Nyalakan Notifikasi</p>
-                            </div>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">No Telp : 0812123456789</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Alamat : Jl Raya No.1</p>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">Detail Transaksi</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Paket Mandi Biasa - Rp150.000</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Pet Hotel - Rp20.000</p>
-                            <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                            <p class="text-black font-Quicksand text-Large font-bold">Rp170.000</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="text-textTitle font-raleway text-Header3 font-semibold">Alamat :</p>
+                    <div class="flex gap-3 items-center">
+                        <p class="text-textParagraph font-Quicksand text-Header4 font-bold">Jl. Raya No.123</p>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                     </div>
                 </div>
             </div>
-            <div class="flex flex-warp gap-10 w-full justify-center items-center">
-                <div class="flex gap-4 px-4 py-4 bg-Orange/20 w-[530px] rounded-[36px]">
-                    <div class="flex flex-col gap-2 w-fit justify-center items-center">
-                        <p class="text-textTitle font-Quicksand text-Large font-semibold">Sep</p>
-                        <div class="flex w-[30px] h-[30px] rounded-full bg-Orange/70 items-center justify-center text-textTitle font-Quicksand text-Large font-medium">18</div>
-                        <div class="bg-textTitle h-full w-[4px] rounded-full"> </div>
+        </div>
+
+        <div id="card-reservation" class="flex flex-col gap-5 justify-center items-center w-full">
+            <div id="content-card" class="flex gap-5 items-center justify-center">
+                <div id="col-1" class="flex flex-col gap-5">
+                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-3 px-4 py-2 border border-black rounded-[20px] w-full">
-                        <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                            <p class="text-black opacity-70 font-Quicksand text-Large font-medium">ID#6GD23</p>
-                        </div>
-                        <p class="text-black font-Quicksand text-Header3 font-semibold">wildan</p>
-                        <div class="flex justify-center items-center gap-4 w-fit">
-                            <p class=""class="text-black font-Quicksand text-Base font-medium">Status : </p>
-                            <div class="flex px-2 py-1 border border-black rounded-tr-[20px] rounded-bl-[8px]">
-                                <p class="text-statusOntheway font-Quicksand text-Base font-medium">• Driver Menuju Lokasi Anda!</p>
+
+                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
                             </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-col gap-3 w-[80px]">
-                                <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
-                                <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
                             </div>
-                            <div class="flex gap-2">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-bell-ringing"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z" /><path d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z" /><path d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" /><path d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" /></svg>
-                                <p class="text-black font-Quicksand text-Base font-medium">Nyalakan Notifikasi</p>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
                             </div>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">No Telp : 0812123456789</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Alamat : Jl Raya No.1</p>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">Detail Transaksi</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Paket Mandi Biasa - Rp150.000</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Pet Hotel - Rp20.000</p>
-                            <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                            <p class="text-black font-Quicksand text-Large font-bold">Rp170.000</p>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-4 px-4 py-4 bg-Orange/20 w-[530px] rounded-[36px]">
-                    <div class="flex flex-col gap-2 w-fit h-full justify-center items-center">
-                        <p class="text-textTitle font-Quicksand text-Large font-semibold">Sep</p>
-                        <div class="flex w-[30px] h-[30px] rounded-full bg-Orange/70 items-center justify-center text-textTitle font-Quicksand text-Large font-medium">18</div>
-                        <div class="bg-textTitle h-full w-[4px] rounded-full"> </div>
+
+                <div id="col-2" class="flex flex-col gap-5">
+                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex flex-col gap-3 px-4 py-2 border border-black rounded-[20px] w-full">
-                        <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                            <p class="text-black opacity-70 font-Quicksand text-Large font-medium">ID#6GD23</p>
-                        </div>
-                        <p class="text-black font-Quicksand text-Header3 font-semibold">wildan</p>
-                        <div class="flex justify-center items-center gap-4 w-fit">
-                            <p class=""class="text-black font-Quicksand text-Base font-medium">Status : </p>
-                            <div class="flex px-2 py-1 border border-black rounded-tr-[20px] rounded-bl-[8px]">
-                                <p class="text-statusGrooming font-Quicksand text-Base font-medium">• Grooming</p>
+
+                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
                             </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <div class="flex flex-col gap-3 w-[80px]">
-                                <img src="{{ asset('images/cat grooming2.png')}}" class="w-[80px] h-[80px] rounded-[8px]">
-                                <p class="text-black font-Quicksand text-small font-medium text-center w-full">klik untuk lihat gambar</p>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
                             </div>
-                            <div class="flex gap-2">
-                                <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="#000000"  class="icon icon-tabler icons-tabler-filled icon-tabler-bell-ringing"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z" /><path d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z" /><path d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z" /><path d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z" /></svg>
-                                <p class="text-black font-Quicksand text-Base font-medium">Nyalakan Notifikasi</p>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
                             </div>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">No Telp : 0812123456789</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Alamat : Jl Raya No.1</p>
-                        </div>
-                        <div class="flex flex-col gap-3 py-2 border-t border-black">
-                            <p class="text-black font-Quicksand text-base font-medium">Detail Transaksi</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Paket Mandi Biasa - Rp150.000</p>
-                            <p class="text-black font-Quicksand text-base font-medium">Pet Hotel - Rp20.000</p>
-                            <div class="flex justify-between">
-                            <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                            <p class="text-black font-Quicksand text-Large font-bold">Rp170.000</p>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -230,9 +319,9 @@
         </div>
         <div class="flex gap-5 justify-center items-center">
             <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
-            <button class="flex px-4 py-2 justify-center items-center border border-black rounded-[8px] text-black font-Quicksand text-Base font-medium w-fit">1</button>
-            <button class="flex px-4 py-2 justify-center items-center bg-Orange/70 border border-black rounded-[8px] text-white font-Quicksand text-Base font-medium w-fit">2</button>
-            <button class="flex px-4 py-2 justify-center items-center border border-black rounded-[8px] text-black font-Quicksand text-Base font-medium w-fit">3</button>
+            <a class="flex px-4 py-2 justify-center items-center border border-black rounded-[8px] text-black font-Quicksand text-Base font-medium w-fit">1</a>
+            <a class="flex px-4 py-2 justify-center items-center bg-Orange/70 border border-black rounded-[8px] text-white font-Quicksand text-Base font-medium w-fit">2</a>
+            <a class="flex px-4 py-2 justify-center items-center border border-black rounded-[8px] text-black font-Quicksand text-Base font-medium w-fit">3</a>
             <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
         </div>
     </section>
