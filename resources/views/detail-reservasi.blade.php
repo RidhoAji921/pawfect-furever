@@ -48,275 +48,397 @@
     @endauth
   </nav>
 
-    <section class="flex flex-col gap-10 px-[120px] justify-center items-center w-full">
-        <h1 class="text-textTitle font-Quicksand text-Header1 font-bold">Profile</h1>
+    <section class="flex flex-col gap-10 lg:px-[120px] px-5 justify-center items-center w-full">
+        <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header3 font-bold">Profile</h1>
         <div id="detail-account" class="flex flex-col w-full justify-center items-center">
             <div class="flex justify-center items-center px-5 py-4 max-w-[680px] w-full bg-Orange/20 rounded-2xl border border-textTitle -mb-5 z-10">
-                <div class="flex flex-col">
-                    <p class="text-textTitle font-raleway text-Header3 font-semibold">Email :</p>
-                    <p class="text-textParagraph font-Quicksand text-Header4 font-bold">Wildan*******@gmail.com</p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-textTitle font-raleway lg:text-Header4 text-Large font-semibold">Email :</p>
+                    <p class="text-textParagraph font-Quicksand lg:text-Large text-Base font-bold">Wildan*******@gmail.com</p>
                 </div>
             </div>
-            <div class="flex justify-between items-center px-5 pt-10 pb-5 w-full bg-Orange/20 rounded-2xl border border-textTitle">
-                <div class="flex flex-col gap-3">
-                    <p class="text-textTitle font-raleway text-Header3 font-semibold">Nama :</p>
+            <div class="flex lg:flex-row flex-col gap-5 lg:justify-between lg:items-center px-5 pt-10 pb-5 w-full bg-Orange/20 rounded-2xl border border-textTitle">
+                <div class="flex flex-col gap-2">
+                    <p class="text-textTitle font-raleway lg:text-Header4 text-Large font-semibold">Nama :</p>
                     <div class="flex gap-3 items-center">
-                        <p class="text-textParagraph font-Quicksand text-Header4 font-bold">Muhammad Wildan</p>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
+                        <p class="text-textParagraph font-Quicksand lg:text-Large text-Base font-bold">Muhammad Wildan</p>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20" class="lg:w-[25px] lg:h-[25px]" viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <p class="text-textTitle font-raleway text-Header3 font-semibold">No Telp :</p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-textTitle font-raleway lg:text-Header4 text-Large font-semibold">No Telp :</p>
                     <div class="flex gap-3 items-center">
-                        <p class="text-textParagraph font-Quicksand text-Header4 font-bold">08123456789010</p>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
+                        <p class="text-textParagraph font-Quicksand lg:text-Large text-Base font-bold">08123456789010</p>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20" class="lg:w-[25px] lg:h-[25px]" viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                     </div>
                 </div>
-                <div class="flex flex-col gap-3">
-                    <p class="text-textTitle font-raleway text-Header3 font-semibold">Alamat :</p>
+                <div class="flex flex-col gap-2">
+                    <p class="text-textTitle font-raleway lg:text-Header4 text-Large font-semibold">Alamat :</p>
                     <div class="flex gap-3 items-center">
-                        <p class="text-textParagraph font-Quicksand text-Header4 font-bold">Jl. Raya No.123</p>
-                        <svg  xmlns="http://www.w3.org/2000/svg"  width="25"  height="25"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="card-reservation" class="flex flex-col gap-5 justify-center items-center w-full">
-            <div id="content-card" class="flex gap-5 items-center justify-center">
-                <div id="col-1" class="flex flex-col gap-5">
-                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
-                        <div class="flex flex-col gap-2 items-center">
-                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
-                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
-                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
-                            </div>
-                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
-                        </div>
-                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
-                            <div class="flex w-full justify-between">
-                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
-                                <div class="flex justify-between w-full">
-                                    <div class="flex gap-2 items-center justify-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
-                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
-                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
-                                        </div>
-                                    </div>
-                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
-                                </div>
-                                <a class="flex items-center justify-center w-full gap-3">
-                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
-                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
-                                </a>
-                            </div>
-                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
-                                </div>
-                                <div class="flex flex-col gap-3 py-2 border-t border-black">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
-                                    <div class="flex w-full justify-between items-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
-                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center w-full">
-                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
-                        <div class="flex flex-col gap-2 items-center">
-                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
-                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
-                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
-                            </div>
-                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
-                        </div>
-                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
-                            <div class="flex w-full justify-between">
-                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
-                                <div class="flex justify-between w-full">
-                                    <div class="flex gap-2 items-center justify-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
-                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
-                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
-                                        </div>
-                                    </div>
-                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
-                                </div>
-                                <a class="flex items-center justify-center w-full gap-3">
-                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
-                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
-                                </a>
-                            </div>
-                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
-                                </div>
-                                <div class="flex flex-col gap-3 py-2 border-t border-black">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
-                                    <div class="flex w-full justify-between items-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
-                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center w-full">
-                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="col-2" class="flex flex-col gap-5">
-                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
-                        <div class="flex flex-col gap-2 items-center">
-                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
-                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
-                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
-                            </div>
-                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
-                        </div>
-                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
-                            <div class="flex w-full justify-between">
-                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
-                                <div class="flex justify-between w-full">
-                                    <div class="flex gap-2 items-center justify-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
-                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
-                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
-                                        </div>
-                                    </div>
-                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
-                                </div>
-                                <a class="flex items-center justify-center w-full gap-3">
-                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
-                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
-                                </a>
-                            </div>
-                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
-                                </div>
-                                <div class="flex flex-col gap-3 py-2 border-t border-black">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
-                                    <div class="flex w-full justify-between items-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
-                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center w-full">
-                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-[590px] h-fit">
-                        <div class="flex flex-col gap-2 items-center">
-                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
-                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
-                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
-                            </div>
-                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
-                        </div>
-                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
-                            <div class="flex w-full justify-between">
-                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
-                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
-                            </div>
-                            <div class="flex flex-col gap-4 w-full">
-                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
-                                <div class="flex justify-between w-full">
-                                    <div class="flex gap-2 items-center justify-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
-                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
-                                            <p class="text-[#FFF600] font-Quicksand text-Base font-bold">Grooming</p>
-                                        </div>
-                                    </div>
-                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
-                                </div>
-                                <a class="flex items-center justify-center w-full gap-3">
-                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
-                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
-                                </a>
-                            </div>
-                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
-                                </div>
-                                <div class="flex w-full justify-between items-center">
-                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
-                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
-                                </div>
-                                <div class="flex flex-col gap-3 py-2 border-t border-black">
-                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
-                                    <div class="flex w-full justify-between items-center">
-                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
-                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp.150.000</p>
-                                    </div>
-                                </div>
-                                <div class="flex justify-between items-center w-full">
-                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
-                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
-                                </div>
-                            </div>
-                        </div>
+                        <p class="text-textParagraph font-Quicksand lg:text-Large text-Base font-bold">Jl. Raya No.123</p>
+                        <svg  xmlns="http://www.w3.org/2000/svg"  width="20"  height="20" class="lg:w-[25px] lg:h-[25px]" viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 7h-1a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-1" /><path d="M20.385 6.585a2.1 2.1 0 0 0 -2.97 -2.97l-8.415 8.385v3h3l8.385 -8.415z" /><path d="M16 5l3 3" /></svg>
                     </div>
                 </div>
             </div>
         </div>
+
+            <div id="content-card" class="flex lg:flex-row flex-col gap-10 w-full">
+                <div id="col-1" class="flex flex-col gap-5 w-full">
+                    <div id="card-groomingProcess" class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-full h-fit">
+                        <div class="flex flex-col gap-2 items-center w-fit">
+                            <p class="text-textTitle font-Quicksand lg:text-Large text-Base font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full max-w-[30px] max-h-[30px] min-w-[25px] min-h-[25px]">
+                                <p class="text-textTitle font-Quicksand lg:text-Large text-Base font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand lg:text-Large text-Base font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand lg:text-Large text-Base font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand lg:text-Header3 text-Large font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full items-center">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand lg:text-Base text-small font-medium">status :</p>
+                                        <div class="bg-[#D4CE16]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#FFF600] font-Quicksand lg:text-Base text-small font-bold">Grooming</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand lg:text-Base text-small font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-lg">
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand lg:text-Base text-small font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand lg:text-Base text-small font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand lg:text-Base text-small font-semibold">Rp150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand lg:text-Large text-Base font-bold">Total</p>
+                                    <p class="text-black font-Quicksand lg:text-Large text-Base font-bold">Rp150.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card-hotelPaid" class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-full h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#76E070]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#3CB91D] font-Quicksand text-Base font-bold">Sudah Dibayar</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Check in : 04/03/2025</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Check out : 05/03/2025</p>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Pet Hotel - 1 Hari :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp20.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp20.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card-hotelFinish" class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-full h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#285E1A]/80 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#2DFF34] font-Quicksand text-Base font-bold">Selesai</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Check in : 04/03/2025</p>
+                                    <p class="text-[#3CB91D] font-Quicksand text-Base font-semibold">Check out : 05/03/2025</p>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Pet Hotel - 1 Hari :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp20.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp20.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="col-2" class="flex flex-col gap-5 w-full">
+                    <div id="card-groomingDriver" class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-full h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#E0AC70]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#B95E1D] font-Quicksand text-Base font-bold">Driver Menuju Lokasi</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat Posisi</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card-groomingCancel"class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-full h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#E07070]/60 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#B92F1D] font-Quicksand text-Base font-bold">Cancel</p>
+                                        </div>
+                                    </div>
+                                    <!-- <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a> -->
+                                </div>
+                                <!-- <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat gambar</p>
+                                </a> -->
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="card-groomingFinish" class="flex gap-4 p-4 bg-Orange/20 rounded-[36px] w-full h-fit">
+                        <div class="flex flex-col gap-2 items-center">
+                            <p class="text-textTitle font-Quicksand text-Large font-semibold">sep</p>
+                            <div class="flex items-center justify-center bg-Orange/70 rounded-full min-w-[30px] min-h-[30px]">
+                                <p class="text-textTitle font-Quicksand text-Large font-medium">18</p>
+                            </div>
+                            <div class="bg-textTitle w-[4px] h-full rounded-full"> </div>
+                        </div>
+                        <div class="flex flex-col gap-3 px-4 py-2 rounded-3xl border border-black w-full">
+                            <div class="flex w-full justify-between">
+                                <p class="text-black font-Quicksand text-Large font-medium">18.00</p>
+                                <p class="text-black/70 font-Quicksand text-Large font-medium">ID #K27DDD</p>
+                            </div>
+                            <div class="flex flex-col gap-4 w-full">
+                                <h1 class="text-black font-Quicksand text-Header3 font-semibold">Muhammad Wildan</h1>
+                                <div class="flex justify-between w-full">
+                                    <div class="flex gap-2 items-center justify-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">status :</p>
+                                        <div class="bg-[#285D1A]/80 flex px-3 py-2 rounded-lg">
+                                            <p class="text-[#2DFF34] font-Quicksand text-Base font-bold">Selesai</p>
+                                        </div>
+                                    </div>
+                                    <a class="text-black font-Quicksand text-Base font-bold underline underline-offset-3">Cancel Order</a>
+                                </div>
+                                <a class="flex items-center justify-center w-full gap-3">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="w-[50px] h-[50px] rounded-lg">
+                                    <p class="text-black font-Quicksand text-Base font-medium underline underline-offset-3">klik untuk melihat Posisi</p>
+                                </a>
+                            </div>
+                            <div class="flex flex-col gap-3 pt-2 w-full border-t border-black">
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">No Telepon :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">08123456789010</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Alamat :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">Jl. Raya No. 123</p>
+                                </div>
+                                <div class="flex w-full justify-between items-center">
+                                    <p class="text-black font-Quicksand text-Base font-medium">ID Transaksi :</p>
+                                    <p class="text-black font-Quicksand text-Base font-semibold">y1uvb3127gbhhfby12g</p>
+                                </div>
+                                <div class="flex flex-col gap-3 py-2 border-t border-black">
+                                    <p class="text-black font-Quicksand text-Base font-medium">Detail Transaksi</p>
+                                    <div class="flex w-full justify-between items-center">
+                                        <p class="text-black font-Quicksand text-Base font-medium">Paket Mandi Biasa :</p>
+                                        <p class="text-black font-Quicksand text-Base font-semibold">Rp150.000</p>
+                                    </div>
+                                </div>
+                                <div class="flex justify-between items-center w-full">
+                                    <p class="text-black font-Quicksand text-Large font-bold">Total</p>
+                                    <p class="text-black font-Quicksand text-Large font-bold">Rp150.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
         <div class="flex gap-5 justify-center items-center">
             <svg  xmlns="http://www.w3.org/2000/svg"  width="40"  height="40"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
             <a class="flex px-4 py-2 justify-center items-center border border-black rounded-[8px] text-black font-Quicksand text-Base font-medium w-fit">1</a>
