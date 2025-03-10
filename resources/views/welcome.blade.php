@@ -15,7 +15,7 @@
 <body class="flex flex-col justify-center items-center gap-[60px] bg-backgroundColor w-full">
   <nav class="flex w-full justify-between items-center px-[60px]">
     <a href="/">
-      <img src="{{ asset('images/Logo.png') }}">
+      <img src="{{ asset('images/Logo.png') }}" alt="Logo pawfect furever">
     </a>
     <ul class="flex text-black font-Header font-medium gap-10">
       <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
@@ -73,7 +73,7 @@
             </a>
         </div>
         <div class="flex flex-col gap-10 justify-center items-center w-full">
-          <img src="{{ asset('images/Frame 13.png') }}" class="md:h-full md:w-auto w-80 h-full object-cover">
+          <img src="{{ asset('images/Frame 13.png') }}" class="md:h-full md:w-auto w-80 h-full object-cover" alt="Dua kucing setelah grooming.">
           <div class="flex flexl md:gap-10 gap-4 justify-center lg:items-center items-start w-full">
             <div class="lg:w-full lg:h-[5px] bg-textTitle rounded-full"> </div>
               <div class="flex flex-col gap-3 justify-center items-center w-full lg:border-4 lg:border-Orange/70 rounded-full px-5 py-3">
@@ -99,8 +99,8 @@
       <div class="flex w-full lg:flex-row flex-col lg:-mb-[110px] -mb-[183px] z-10 justify-between items-center">
         <div></div>
         <div></div>
-        <img src="{{ asset('images/2cat.png') }}" class="lg:w-auto w-[179px]">
-        <img src="{{ asset('images/cat track.png') }}" class="mt-[100px] lg:w-auto w-[71px]">
+        <img src="{{ asset('images/2cat.png') }}" class="lg:w-auto w-[179px]" alt="Dua anak kucing berwarna coklat dan berwarna putih.">
+        <img src="{{ asset('images/cat track.png') }}" class="mt-[100px] lg:w-auto w-[71px]" alt="Makanan kucing berbentuk telapak kaki kucing.">
       </div>
       <div
         class="flex lg:flex-row flex-col h-fit lg:w-full w-[248px] max-w-[1266px] bg-Orange/70 lg:px-[120px] px-3 py-5 rounded-[20px] justify-center items-center lg:gap-10 gap-4">
@@ -122,7 +122,7 @@
         <p class="text-textParagraph font-raleway font-medium lg:text-Header4 text-Large  text-justify">Selamat datang di Pawfect Furever! Didirikan pada 2024, kami hadir dengan dedikasi untuk memberikan perawatan terbaik bagi hewan peliharaan Anda. Dengan tim profesional berpengalaman,
         kami menawarkan layanan grooming yang memastikan penampilan, kesehatan, dan kebahagiaan hewan kesayangan Anda. Mari ciptakan pengalaman grooming yang menyenangkan bersama kami!</p>
       </div>
-      <img src="{{ asset('images/Frame 84.png') }}">
+      <img src="{{ asset('images/Frame 84.png') }}" alt="kucing British Shorthair abu-abu dengan mata kuning keemasan.">
     </section>
     
     <section id="service" class="flex flex-col gap-10 lg:px-[120px] px-5 justify-center items-center w-full">
@@ -140,7 +140,7 @@
         <div class="flex flex-col gap-10 w-full justify-center items-center">
           <div class="flex flex-col gap-5">
             <div class="flex gap-5 justify-center items-center lg:w-fit w-full">
-              <img src="{{ asset('images/Logo Pet grooming.png') }}">
+              <img src="{{ asset('images/Logo Pet grooming.png') }}" alt="Pet grooming.">
               <p class="text-textTitle font-Quicksand lg:text-Header4 text-Header4 font-semibold">Pet Grooming</p>
             </div>
             <p class="text-textParagraph font-raleway lg:text-Large text-Base lg:text-left text-center font-medium">Pet grooming adalah proses merawat dan membersihkan hewan peliharaan untuk menjaga kebersihan dan kesehatan mereka.</p>
@@ -148,7 +148,7 @@
           <div class="w-full h-[5px] bg-line rounded-full"> </div>
           <div class="flex flex-col gap-5">
             <div class="flex gap-5 justify-center items-center lg:w-fit w-full">
-              <img src="{{ asset('images/Logo Pet Hotel.png') }}">
+              <img src="{{ asset('images/Logo Pet Hotel.png') }}" alt="Pet hotel.">
               <p class="text-textTitle font-Quicksand lg:text-Header4 text-Header4 font-semibold">Pet Hotel</p>
             </div>
             <p class="text-textParagraph font-raleway lg:text-Large text-Base lg:text-left text-center font-medium">Pet hotel adalah tempat penginapan sementara untuk hewan peliharaan dengan fasilitas perawatan dan kenyamanan layaknya di rumah.</p>
@@ -156,7 +156,7 @@
           <div class="w-full h-[5px] bg-line rounded-full"> </div>
           <div class="flex flex-col gap-5">
             <div class="flex gap-5 justify-center items-center lg:w-fit w-full">
-              <img src="{{ asset('images/Logo Pet Walking.png') }}">
+              <img src="{{ asset('images/Logo Pet Walking.png') }}" alt="Pet Walking.">
               <p class="text-textTitle font-Quicksand lg:text-Header4 text-Header4 font-semibold">Pet Walking & Sitting</p>
             </div>
             <p class="text-textParagraph font-raleway lg:text-Large text-Base lg:text-left text-center font-medium">Pet walking dan sitting memberikan kenyamanan bagi hewan peliharaan Anda, memastikan mereka tetap aktif dan terawat saat Anda sibuk.</p>
@@ -216,7 +216,7 @@
         </div>
 
         <div class="flex flex-col justify-center items-center">
-          <img src="{{ asset('images/half face cat.png') }}" class=" z-10 -mb-[30px]">
+          <img src="{{ asset('images/half face cat.png') }}" class=" z-10 -mb-[30px]" alt="Kucing abu-abu dengan mata kuning mengintip di atas.">
           <div class="flex flex-col gap-10 px-5 py-4 bg-Orange/20 rounded-[28px]">
             <p class="text-textTitle font-Quicksand text-Header4 font-bold">Mandi Lengkap</p>
             <p class="text-textTitle font-Quicksand text-Header2 font-bold">Rp300.000</p>
@@ -309,7 +309,7 @@
     </section>
 
     <section id="why" class="flex lg:flex-row flex-col gap-10 lg:px-[120px] w-full">
-      <img src="{{ asset('images/frame 95.png') }}" class="lg:w-auto lg:h-auto w-[290px] h-[415px]">
+      <img src="{{ asset('images/frame 95.png') }}" class="lg:w-auto lg:h-auto w-[290px] h-[415px]" alt="kucing abu-abu sedang melihat keunggulan layanan pawfect furever.">
       <div class="flex flex-col gap-10 justify-center items-center w-full px-5">
         <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header2 lg:text-left text-center font-bold">Kenapa Harus Groming di Pawfect Furever</h1>
         <div class="flex flex-col lg:gap-[60px] gap-5 items-center justify-center">
@@ -345,7 +345,7 @@
       <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header2 font-bold lg:text-left text-center">Testimoni</h1>
       <div class="flex flex-col justify-center items-center w-full">
         <div class="flex lg:flex-row flex-col gap-10 lg:p-10 px-4 py-5 bg-Green/70 rounded-[40px] justify-center items-center w-full">
-          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px] lg:w-auto w-full">
+          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px] lg:w-auto w-full" alt="Seseorang membagikan testimoni di pawfect furever.">
           <div class="flex flex-col gap-10 lg:py-10 w-full">
             <div class="flex lg:gap-[120px] w-full justify-between">
               <div class="flex flex-col gap-3">
@@ -374,7 +374,7 @@
 
         <div class="flex flex-col justify-center items-center">
         <div class="flex lg:flex-row flex-col gap-10 lg:p-10 px-4 py-5 bg-Green/40 rounded-[40px] justify-center items-center w-full lg:-mt-[420px] -mt-[650px]">
-          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px] lg:w-auto w-full">
+          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px] lg:w-auto w-full" alt="Seseorang membagikan testimoni di pawfect furever.">
           <div class="flex flex-col gap-10 lg:py-10 w-full">
             <div class="flex lg:gap-[120px] w-full justify-between">
               <div class="flex flex-col gap-3">
@@ -403,7 +403,7 @@
 
         <div class="flex flex-col justify-center items-center">
         <div class="flex lg:flex-row flex-col gap-10 lg:p-10 px-4 py-5 bg-Green/10 rounded-[40px] justify-center items-center w-full lg:-mt-[420px] -mt-[650px]">
-          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px] lg:w-auto w-full">
+          <img src="{{ asset('images/Frame 107.png') }}" class="rounded-[20px] lg:w-auto w-full" alt="Seseorang membagikan testimoni di pawfect furever.">
           <div class="flex flex-col gap-10 lg:py-10 w-full">
             <div class="flex lg:gap-[120px] w-full justify-between">
               <div class="flex flex-col gap-3">
@@ -441,7 +441,7 @@
           </a>
         </div>
       </div>
-      <img src="{{ asset('images/gray cat.png') }}" class="lg:w-[456px] lg:h-[469px] w-[148px] h-[154px] lg:-mt-[290px] -mt-[98px]">
+      <img src="{{ asset('images/gray cat.png') }}" class="lg:w-[456px] lg:h-[469px] w-[148px] h-[154px] lg:-mt-[290px] -mt-[98px]" alt="Kucing abu-abu berbulu tebal, mengajak untuk membuat peliharaan tampil menawan.">
     </section>
   </div>
 
@@ -462,7 +462,7 @@
                 </div>
             </div>
             <div class="flex flex-col gap-4 justify-center items-center w-full">
-                <img src="{{ asset('images/Logo.png') }}" class="w-[100px] h-[100px]">
+                <img src="{{ asset('images/Logo.png') }}" class="w-[100px] h-[100px]" alt="Logo pawfect furever">
                 <p class="text-black font-Quicksand text-Header4 font-semibold">Pawfect Furever</p>
                 <div class="flex gap-5">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>
