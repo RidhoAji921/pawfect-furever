@@ -14,7 +14,7 @@
 <body class="flex flex-col justify-center items-center overflow-x-hidden gap-16 bg-backgroundColor">
 <nav class="flex w-full justify-between items-center px-[60px]">
     <a href="/">
-      <img src="{{ asset('images/Logo.png') }}">
+      <img src="{{ asset('images/Logo.png') }}" alt="Logo pawfect furever.">
     </a>
     <ul class="flex text-black font-Header font-medium gap-10">
       <li class="text-textParagraph font-Quicksand text-Header4 font-medium">
@@ -109,7 +109,7 @@
                                     <a class="text-black font-Quicksand lg:text-Base text-small font-bold underline underline-offset-3">Cancel Order</a>
                                 </div>
                                 <a class="flex items-center justify-center w-full gap-3">
-                                    <img src="{{ asset('images/cat grooming2.png') }}" class="lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-lg">
+                                    <img src="{{ asset('images/cat grooming2.png') }}" class="lg:w-[50px] lg:h-[50px] w-[30px] h-[30px] rounded-lg" alt="">
                                     <p class="text-black font-Quicksand lg:text-Base text-small font-medium underline underline-offset-3">klik untuk melihat gambar</p>
                                 </a>
                             </div>
@@ -464,7 +464,7 @@
                 </div>
             </div>
             <div class="flex flex-col gap-4 justify-center items-center w-full">
-                <img src="{{ asset('images/Logo.png') }}" class="w-[100px] h-[100px]">
+                <img src="{{ asset('images/Logo.png') }}" class="w-[100px] h-[100px]" alt="Logo pawfect furever.">
                 <p class="text-black font-Quicksand text-Header4 font-semibold">Pawfect Furever</p>
                 <div class="flex gap-5">
                     <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-tiktok"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z" /></svg>

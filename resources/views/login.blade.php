@@ -19,7 +19,7 @@
     </div>
     @endif
     <div class="flex flex-col w-fit justify-center items-center h-fit">
-        <img src="{{ asset('images/login_cat.png') }}" class="z-10 mb-[-90px]">
+        <img src="{{ asset('images/login_cat.png') }}" class="z-10 mb-[-90px]" alt="Kucing berwarna jingga muda dengan lidah menjulur, duduk di atas desain login dengan warna-warna gradasi oranye cerah.">
         <div class="flex flex-col lg:gap-10 gap-5 p-10 rounded-[20px] bg-Orange/20 items-center w-full drop-shadow-[4px_8px_4px_rgba(0,0,0,0.25)] h-fit">
             <h1 class="text-textTitle font-Quicksand lg:text-Header2 text-Header3 font-bold">Login</h1>
             <form method="POST" action="{{ route('login') }}" class="flex flex-col gap-5 w-full">
