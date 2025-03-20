@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Models\PetHotelReservation;
 use App\Models\Reservation;
 use App\Models\User;
 use Livewire\Component;
@@ -28,6 +29,7 @@ class PanelContent extends Component
                 $this->data = [
                     'users' => User::all(),
                     'orders' => Reservation::all(),
+                    'hotel-orders' => PetHotelReservation::all(),
                 ];
                 break;
             case 'users':

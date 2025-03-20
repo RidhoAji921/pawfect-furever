@@ -43,7 +43,7 @@
                 </div>
             </form>
             <div class="w-full bg-textTitle h-[2px] rounded-full"> </div>
-            <p class="text-white font-Quicksand lg:text-Header4 text-sm font-semibold text-center">Belum punya akun?<a href="/signup"><span class="text-textTitle font-Quicksand lg:text-Header4 text-sm font-semibold">Daftar Sekarang</span></a></p>
+            <p class="text-white font-Quicksand lg:text-Header4 text-sm font-semibold text-center">Belum punya akun?<a href="/signup"><span class="text-textTitle font-Quicksand lg:text-Header4 text-sm font-semibold"> Daftar Sekarang</span></a></p>
         </div>
     </div>
     <p class="text-black/50 font-Quicksand lg:text-Large text-sm text-center font-semibold">pawfect furever © 2024 All Right Reserved</p>

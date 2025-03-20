@@ -39,6 +39,17 @@ class PetHotelOrderTable extends Component
         }
     }
 
+    public function updateNote($orderId, $newNote)
+    {
+        $order = PetHotelReservation::find($orderId);
+        if($order){
+            $order->update([
+                'annotation' => $newNote,
+            ]);
+            $this->updatedSearch();
+        }
+    }
+
     public function render()
     {
         return view('admin.panels.livewire.pet-hotel-order-table');
