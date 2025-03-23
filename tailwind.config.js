@@ -21,7 +21,11 @@ export default {
         'Green/70' : '#798777',
         'statusGrooming' : '#FFE500',
         'statusSelesai' : '#61FF00',
-        'statusOntheway' : '#FF7A00',
+        'statusOntheway': '#FF7A00',
+        'statusCancel': '#B92F1D',
+        'statusPending': '#FFA500', 
+        'statusRefunded': '#4A90E2', 
+        'statusWaiting': '#A569BD', 
         'line' : '#D0B8A8',
       },
 
