@@ -35,7 +35,7 @@ class ReservationController extends Controller
             'user_note' => $request->note, // Menyimpan catatan jika ada
         ]);
 
-        return redirect()->route('detail-reservasi')->with('success', 'Reservasi berhasil dibuat.');
+        return redirect()->route('profile')->with('success', 'Reservasi berhasil dibuat.');
     }
 
     public function petHotelStore(Request $request){
@@ -57,6 +57,6 @@ class ReservationController extends Controller
             'user_note' => $request->note,
         ]);
 
-        return redirect()->route('detail-reservasi')->with('success', 'Reservasi berhasil dibuat.');
+        return redirect()->route('profile')->with('success', 'Reservasi berhasil dibuat.');
     }
 }
