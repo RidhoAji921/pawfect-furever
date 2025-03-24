@@ -50,7 +50,7 @@
 
     <section id="price" class="flex flex-col gap-10 lg:px-[120px] px-5 justify-center items-center w-full">
         <h1 class="text-textTitle font-Quicksand lg:text-Header1 text-Header2 font-bold text-center">Daftar Harga Grooming</h1>
-        <div class="flex gap-2 justify-center items-center bg-Orange/10/40 rounded-full w-fit">
+        <div class="flex gap-2 justify-center items-center bg-Orange/10/40 rounded-full w-fit border-2 border-Orange/10">
             <a id="btn-grooming" href="#grooming" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full">Pet Grooming</a>
             <a id="btn-hotel" href="#pet-hotel" class="flex px-6 py-5 items-center text-textTitle font-Quicksand lg:text-Header3 text-Base font-bold rounded-full ">Pet Hotel</a>
         </div>
@@ -195,25 +195,27 @@
 
       <!-- Konten Pet Hotel -->
     <div id="hotel-content" class="flex flex-col hidden w-full justify-center items-center gap-10">
-      <form method="POST" action="{{ route('reservation-hotel.store') }}">
+      <form method="POST" action="{{ route('reservation-hotel.store') }}" class="flex flex-col max-w-[1100px] w-full items-center gap-5">
         @csrf
-        <div class="flex flex-col gap-3 max-w-[1150px] w-full">
+        <div class="flex flex-col gap-3 w-full">
           <label for="nama_pet" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Nama Pet :</label>
           <input name="nama_pet" id="nama_pet" value="{{ old('nama_pet') }}" type="text" placeholder="Masukan nama pet anda ..." class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" required></input>
           @error('nama_pet')
           <div class="text-[#FF181C] font-Quicksand text-base font-medium">Nama peliharaan wajib diisi!</div>
           @enderror
         </div>
-        <div class="flex lg:flex-row flex-col w-full justify-center lg:gap-10 gap-5 lg:items-end items-center">
-          <div class="flex flex-col gap-3 max-w-[500px] w-full">
+        <div class="flex lg:flex-row flex-col w-full lg:gap-10 gap-4 justify-center items-center">
+          <div class="flex flex-col gap-3 w-full items-start">
             <label for="check_in" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check in :</label>
             <input name="check_in" id="check_in" value="{{ old('check_in') }}" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" required></input>
           </div>
           @error('check_in')
           <div class="text-[#FF181C] font-Quicksand text-base font-medium">Tanggal check-in tidak valid!</div>
           @enderror
-          <svg xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="lg:rotate-0 rotate-90 icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
-          <div class="flex flex-col gap-3 max-w-[500px]  w-full">
+          <div class="flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg"  width="50"  height="50"  viewBox="0 0 24 24"  fill="none"  stroke="#570F29"  stroke-width="3"  stroke-linecap="round"  stroke-linejoin="round"  class="lg:rotate-0 rotate-90 icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+          </div>
+          <div class="flex flex-col gap-3  w-full">
             <label for="check_out" class="text-textTitle font-Quicksand lg:text-Header4 text-Large font-bold">Check Out :</label>
             <input name="check_out" id="check_out" value="{{ old('check_out') }}" type="date" placeholder="" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full" required></input>
             @error('check_out')
@@ -221,9 +223,9 @@
             @enderror
           </div>
         </div>
-        <div class="w-full">
-          <p class="text-textTitle font-Quicksand lg:text-large text-Large font-bold">Jumlah hari: <span id="total_days">Tanggal check-in dan check-out tidak valid</span></p>
-          <p class="text-textTitle font-Quicksand lg:text-large text-Large font-bold">Total harga: <span id="total_price">Tanggal check-in dan check-out tidak valid</span></p>
+        <div class="flex justify-between items-center w-full">
+          <p class="text-textTitle font-Quicksand lg:text-Large text-Base font-bold">Jumlah hari: <span id="total_days">Tanggal check-in dan check-out tidak valid</span></p>
+          <p class="text-textTitle font-Quicksand lg:text-Large text-Base font-bold">Total harga: <span id="total_price">Tanggal check-in dan check-out tidak valid</span></p>
         </div>
         <div class="w-full">
           <textarea name="note" id="note" value="{{ old('note') }}" type="date" placeholder="Note" class="text-white opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></textarea>
