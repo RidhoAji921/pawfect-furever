@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ForgotPasswordController;
@@ -24,12 +25,18 @@ Route::get('/cek-reservasi', function () {
     return view('cek-reservasi');
 });
 
-Route::get('/detail-reservasi', function () {
-    return view('detail-reservasi');
-})->name("detail-reservasi");;
+// Route::get('/profile', function () {
+//     return view('profile');
+// })->name("profile");
+Route::get('/profile', [ProfileController::class, 'show'])->middleware("auth")->name("profile");
 
 Route::get('/eror-page', function () {
     return view('eror-page');
+});
+Route::middleware('auth')->group(function () {
+    // Route untuk cancel order
+    Route::post('/profile/reservations/{id}/cancel', [ProfileController::class, 'cancelOrder'])
+        ->name('profile.reservations.cancel');
 });
 
 Route::get('/login', [AuthController::class, 'showLogin'])->middleware("guest")->name('login.show');
