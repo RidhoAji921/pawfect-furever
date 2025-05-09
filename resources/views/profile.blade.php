@@ -94,9 +94,9 @@
             <h1
                 class="text-textTitle font-Quicksand lg:text-Header1 text-Header3 font-bold">Profile</h1>
                 @if(session('success'))
-                <div class="flex items-center justify-center lg:px-5 px-2 py-2 gap-2 bg-Orange/70 text-white font-Quicksand lg:text-Base text-Small font-bold rounded-2xl">
+                <div id="info" class="flex items-center justify-center lg:px-5 px-2 py-2 gap-2 bg-Orange/70 text-white font-Quicksand lg:text-Base text-Small font-bold rounded-2xl">
                     <p>{{ session('success') }}</p>
-                    <svg class="hover:stroke-2 cursor-pointer w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <svg onclick="closeInfo()" class="hover:stroke-2 cursor-pointer w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/>
                     </svg>                      
                 </div>
@@ -375,7 +375,6 @@
             </div>
         </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
         const openButtons = document.querySelectorAll(".openModal");
@@ -399,6 +398,10 @@
         });
     });
 
+    function closeInfo() {
+        const info = document.querySelector("#info");
+        info.classList.add("hidden");
+    }
     </script>
 </body>
 </html>
