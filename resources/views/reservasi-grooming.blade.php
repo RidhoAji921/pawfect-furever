@@ -263,10 +263,10 @@
                   <textarea id="note" name="note" placeholder="Masukkan Note ..." class="flex text-white resize-none max-h-[200px] overflow-hidden opacity-text-60 font-Quicksand lg:text-Large text-Base font-medium bg-Orange/70 px-4 py-2 rounded-[16px] w-full"></textarea>
               </div>
               <div class="flex justify-between w-full mt-5">
-                  <button type="button" id="closeModal" class="flex lg:px-5 px-4 py-3 border-[2px] border-Orange/10 text-white font-Quicksand lg:text-Header4 text-Large font-bold rounded-2xl">
+                  <button type="button" id="closeModal" class="flex lg:px-5 px-4 py-3 border border-Orange/10 hover:bg-Orange/10 text-white font-Quicksand lg:text-Large text-Base font-bold rounded-2xl">
                       Close
                   </button>
-                  <button type="submit" id="confirmButton" class="flex lg:px-5 px-4 py-3 bg-Orange/10 text-white font-Quicksand lg:text-Header4 text-Large font-bold rounded-2xl">
+                  <button type="submit" id="confirmButton" class="flex lg:px-5 px-4 py-3 max-w-[150px] justify-center items-center text-center w-full bg-Orange/10 text-white font-Quicksand lg:text-Large text-Base font-bold rounded-2xl">
                       Konfirm
                   </button>
               </div>
