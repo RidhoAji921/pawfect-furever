@@ -24,6 +24,7 @@ class User extends Authenticatable
         'is_admin',
         'address',
     ];
+    protected $table = 'users';
 
     /**
      * The attributes that should be hidden for serialization.

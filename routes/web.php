@@ -29,6 +29,7 @@ Route::get('/cek-reservasi', function () {
 //     return view('profile');
 // })->name("profile");
 Route::get('/profile', [ProfileController::class, 'show'])->middleware("auth")->name("profile");
+Route::post('/profile', [ProfileController::class, 'update'])->middleware("auth")->name("profile.update");
 
 Route::get('/eror-page', function () {
     return view('eror-page');

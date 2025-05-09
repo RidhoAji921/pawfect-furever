@@ -3,12 +3,23 @@
 namespace App\Http\Controllers;
 
 use App\Models\Reservation;
-use Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ProfileController extends Controller
 {
-    //
+    public function update(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'phone' => ['nullable','regex:/^(08)[0-9]{9,14}$/','unique:users,phone,'. Auth::id()],
+            'address' => 'required|string|max:255',
+        ]);
+        $user = Auth::user();
+        $user->update($request->only('name', 'phone', 'address'));
+
+        return redirect()->route('profile')->with('success', 'Edit Profil Berhasil!');
+    }
 
     public function show() {
         // $reservations = Reservation::with('package')->get();
